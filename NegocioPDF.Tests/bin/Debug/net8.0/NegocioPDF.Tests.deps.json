@@ -18,6 +18,7 @@
           "PDFOperationsF": "1.0.0",
           "SpecFlow": "3.9.74",
           "SpecFlow.NUnit": "3.9.74",
+          "SpecFlow.Plus.LivingDocPlugin": "3.9.57",
           "SpecFlow.Tools.MsBuild.Generation": "3.9.74",
           "coverlet.collector": "6.0.0",
           "NegocioPDF": "1.0.0.0"
@@ -586,6 +587,23 @@
           "lib/net6.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll": {
             "assemblyVersion": "3.9.0.0",
             "fileVersion": "3.9.74.14555"
+          }
+        }
+      },
+      "SpecFlow.Plus.LivingDocPlugin/3.9.57": {
+        "dependencies": {
+          "SpecFlow": "3.9.74",
+          "SpecFlow.Internal.Json": "1.0.8",
+          "SpecFlow.Tools.MsBuild.Generation": "3.9.74"
+        },
+        "runtime": {
+          "lib/netstandard2.0/LivingDoc.Dtos.dll": {
+            "assemblyVersion": "3.9.0.0",
+            "fileVersion": "3.9.57.23759"
+          },
+          "lib/netstandard2.0/LivingDoc.SpecFlowPlugin.dll": {
+            "assemblyVersion": "3.9.0.0",
+            "fileVersion": "3.9.57.23759"
           }
         }
       },
@@ -1483,6 +1501,13 @@
       "sha512": "sha512-nMPLztTT5IZDMnvNCUxklqaM+agn4kjuNy/qAcYQQOxau2G1MF73UxhL9OXjJQaEuPuyT8gJvXudOYCFZWztxA==",
       "path": "specflow.nunit/3.9.74",
       "hashPath": "specflow.nunit.3.9.74.nupkg.sha512"
+    },
+    "SpecFlow.Plus.LivingDocPlugin/3.9.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hH/jTxLVWS/QlCGvNMk4BSI/mcJhlnEjx4xWjP4dLUWek/CmSST49NAzQVvZpoqwrkIErMAzWRV/PFFvyLiShA==",
+      "path": "specflow.plus.livingdocplugin/3.9.57",
+      "hashPath": "specflow.plus.livingdocplugin.3.9.57.nupkg.sha512"
     },
     "SpecFlow.Tools.MsBuild.Generation/3.9.74": {
       "type": "package",

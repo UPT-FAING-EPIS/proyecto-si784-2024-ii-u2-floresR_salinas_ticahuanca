@@ -83,6 +83,10 @@
               "target": "Package",
               "version": "[3.9.74, )"
             },
+            "SpecFlow.Plus.LivingDocPlugin": {
+              "target": "Package",
+              "version": "[3.9.57, )"
+            },
             "SpecFlow.Tools.MsBuild.Generation": {
               "target": "Package",
               "version": "[3.9.74, )"

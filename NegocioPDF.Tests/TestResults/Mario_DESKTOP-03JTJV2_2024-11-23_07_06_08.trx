@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="37fff6eb-369a-4ebe-87db-d9e08b38d385" name="Mario@DESKTOP-03JTJV2 2024-11-23 07:06:08" runUser="DESKTOP-03JTJV2\Mario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2024-11-23T07:06:08.9329625-05:00" queuing="2024-11-23T07:06:08.9329628-05:00" start="2024-11-23T07:06:07.8536649-05:00" finish="2024-11-23T07:06:09.0226037-05:00" />
+  <TestSettings name="default" id="8a32b823-8b7b-4fa6-88b1-05c3fd9b17cf">
+    <Deployment runDeploymentRoot="Mario_DESKTOP-03JTJV2_2024-11-23_07_06_08" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="bf8def8a-2634-4633-b1ac-9d3e107a2d38" testId="ed38b0cf-b648-c69b-4748-aefd8800c79f" testName="ObtenerPorUsuarioId_InvalidUsuarioId_ReturnsNull" computerName="DESKTOP-03JTJV2" duration="00:00:00.0075180" startTime="2024-11-23T07:06:08.7739550-05:00" endTime="2024-11-23T07:06:08.7814720-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf8def8a-2634-4633-b1ac-9d3e107a2d38" />
+    <UnitTestResult executionId="b361cabe-d750-4aaf-b957-fd9ac11cdd7c" testId="2c517892-49e9-0c11-cb10-8c6b0d723bb5" testName="UsuarioPremiumRealizaOperacionesSinLimite" computerName="DESKTOP-03JTJV2" duration="00:00:00.0006470" startTime="2024-11-23T07:06:08.8426487-05:00" endTime="2024-11-23T07:06:08.8432970-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b361cabe-d750-4aaf-b957-fd9ac11cdd7c">
+      <Output>
+        <StdOut>Given un usuario con id 2 y suscripción "premium"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.DadoUnUsuarioConSuscripcion(2, "premium") (0.0s)&#xD;
+When intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+Then la operación debería realizarse correctamente&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.EntoncesLaOperacionDeberiaRealizarseCorrectamente() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9e04f238-de02-422c-92c2-d9222e19c0f4" testId="b30ceab3-7e13-ebb8-a0c6-6b5e2477e816" testName="ObtenerOperacionesPorUsuario_InvalidUsuarioId_ReturnsEmptyList" computerName="DESKTOP-03JTJV2" duration="00:00:00.0011950" startTime="2024-11-23T07:06:08.8819560-05:00" endTime="2024-11-23T07:06:08.8831508-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e04f238-de02-422c-92c2-d9222e19c0f4" />
+    <UnitTestResult executionId="a8743a98-bc9d-4f71-90f9-deeb56beb75b" testId="7c7fcdcf-86fb-cfaf-0213-32dbc81881b0" testName="RegistroExitoso" computerName="DESKTOP-03JTJV2" duration="00:00:00.0053600" startTime="2024-11-23T07:06:08.8571773-05:00" endTime="2024-11-23T07:06:08.8625376-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a8743a98-bc9d-4f71-90f9-deeb56beb75b">
+      <Output>
+        <StdOut>Given un nuevo usuario con nombre "Nuevo Usuario", correo "nuevo@test.com" y contraseña "newpass123"&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.DadoUnNuevoUsuario("Nuevo Usuario", "nuevo@test.com", "newpass123") (0.0s)&#xD;
+When intento registrar el usuario&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.CuandoIntentoRegistrarElUsuario() (0.0s)&#xD;
+Then el usuario debería registrarse correctamente&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.EntoncesElUsuarioDeberiaRegistrarseCorrectamente() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4599e00c-f594-4f2e-b535-dc224ec29c5a" testId="41b120ac-62ef-3ed5-db23-54c697fa0ba1" testName="LoginFallidoConCorreoVacio" computerName="DESKTOP-03JTJV2" duration="00:00:00.0041859" startTime="2024-11-23T07:06:08.8174869-05:00" endTime="2024-11-23T07:06:08.8216724-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4599e00c-f594-4f2e-b535-dc224ec29c5a">
+      <Output>
+        <StdOut>Given un usuario con correo "" y contraseña "password123"&#xD;
+-&gt; done: LoginFeatureSteps.DadoUnUsuarioConCorreoYContrasena("", "password123") (0.0s)&#xD;
+When intento iniciar sesión&#xD;
+-&gt; done: LoginFeatureSteps.CuandoIntentoIniciarSesion() (0.0s)&#xD;
+Then debería ver un mensaje de error&#xD;
+-&gt; done: LoginFeatureSteps.EntoncesDeberiaVerUnMensajeDeError() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="007da4d4-4366-4207-83d1-b2bcd5ac53a8" testId="d23ee3e6-b0dc-1528-04f1-ae4ce599d963" testName="ContarOperacionesRealizadas_ValidUsuarioId_ReturnsCorrectCount" computerName="DESKTOP-03JTJV2" duration="00:00:00.0007990" startTime="2024-11-23T07:06:08.8811274-05:00" endTime="2024-11-23T07:06:08.8819263-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="007da4d4-4366-4207-83d1-b2bcd5ac53a8" />
+    <UnitTestResult executionId="a46a9d60-35e9-48fd-abd7-971362167c25" testId="cc2ed7a8-df3f-e275-1139-39bb1411c597" testName="Login_WithValidCredentials_ReturnsUser" computerName="DESKTOP-03JTJV2" duration="00:00:00.0016890" startTime="2024-11-23T07:06:08.9139966-05:00" endTime="2024-11-23T07:06:08.9156853-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a46a9d60-35e9-48fd-abd7-971362167c25" />
+    <UnitTestResult executionId="578ada2b-4931-4d30-8a41-d2f407fe970b" testId="a101fd59-00d5-6cf4-6a17-fca1e2eb331b" testName="RegistrarUsuario_WithEmptyPassword_ThrowsArgumentException" computerName="DESKTOP-03JTJV2" duration="00:00:00.0017510" startTime="2024-11-23T07:06:08.9263144-05:00" endTime="2024-11-23T07:06:08.9280652-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="578ada2b-4931-4d30-8a41-d2f407fe970b" />
+    <UnitTestResult executionId="17fabeaf-86fc-42f6-9f8b-72f9aa3a3619" testId="0606b363-345d-89f0-85e2-611625c2f9a0" testName="LoginFallidoConCredencialesInvalidas" computerName="DESKTOP-03JTJV2" duration="00:00:00.0005900" startTime="2024-11-23T07:06:08.8217058-05:00" endTime="2024-11-23T07:06:08.8222957-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17fabeaf-86fc-42f6-9f8b-72f9aa3a3619">
+      <Output>
+        <StdOut>Given un usuario con correo "invalid@test.com" y contraseña "wrongpass"&#xD;
+-&gt; done: LoginFeatureSteps.DadoUnUsuarioConCorreoYContrasena("invalid@test.com", "wrongpass") (0.0s)&#xD;
+When intento iniciar sesión&#xD;
+-&gt; done: LoginFeatureSteps.CuandoIntentoIniciarSesion() (0.0s)&#xD;
+Then debería ver un mensaje de error&#xD;
+-&gt; done: LoginFeatureSteps.EntoncesDeberiaVerUnMensajeDeError() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3f9b2404-4b1b-4b0d-9e04-ebb75be39481" testId="edb9e72f-732b-2df7-97e8-42f4a4cfc3c2" testName="RegistrarOperacionPDF_ValidData_ReturnsTrue" computerName="DESKTOP-03JTJV2" duration="00:00:00.0136950" startTime="2024-11-23T07:06:08.8844314-05:00" endTime="2024-11-23T07:06:08.8981254-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f9b2404-4b1b-4b0d-9e04-ebb75be39481" />
+    <UnitTestResult executionId="61b29f60-f665-430a-a91e-5f14f05f4ad4" testId="d5a50123-fb74-6b6f-431a-41f426edd539" testName="RegistrarUsuario_WithNullUser_ThrowsArgumentNullException" computerName="DESKTOP-03JTJV2" duration="00:00:00.0010120" startTime="2024-11-23T07:06:08.9319800-05:00" endTime="2024-11-23T07:06:08.9329914-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="61b29f60-f665-430a-a91e-5f14f05f4ad4" />
+    <UnitTestResult executionId="331c0a72-622b-4e33-b0ba-7910d499bc35" testId="0c801950-58c4-828b-7fec-0342669066f3" testName="ObtenerOperacionesPorUsuario_ValidUsuarioId_ReturnsOperaciones" computerName="DESKTOP-03JTJV2" duration="00:00:00.0012240" startTime="2024-11-23T07:06:08.8831711-05:00" endTime="2024-11-23T07:06:08.8843943-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="331c0a72-622b-4e33-b0ba-7910d499bc35" />
+    <UnitTestResult executionId="8e5cf029-8e6a-4557-ab1b-68ec626d0585" testId="f486c3ac-ea38-b343-0a41-f6e3ee532314" testName="Login_WithInvalidCredentials_ReturnsNull" computerName="DESKTOP-03JTJV2" duration="00:00:00.0010100" startTime="2024-11-23T07:06:08.9129467-05:00" endTime="2024-11-23T07:06:08.9139561-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e5cf029-8e6a-4557-ab1b-68ec626d0585" />
+    <UnitTestResult executionId="74d109a1-b9c5-447e-b40a-433dfc7328e4" testId="907c981b-46a6-90fb-fd68-5c6212bdbe31" testName="ContarOperacionesRealizadas_InvalidUsuarioId_ReturnsZero" computerName="DESKTOP-03JTJV2" duration="00:00:00.0063650" startTime="2024-11-23T07:06:08.8745881-05:00" endTime="2024-11-23T07:06:08.8809520-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74d109a1-b9c5-447e-b40a-433dfc7328e4" />
+    <UnitTestResult executionId="9e49a30e-09a8-4cb9-a499-332000033958" testId="0e0f72c5-5196-71f9-729f-25a220c7c635" testName="ObtenerUsuarioPorId_WithZeroId_ThrowsArgumentException" computerName="DESKTOP-03JTJV2" duration="00:00:00.0007249" startTime="2024-11-23T07:06:08.9177085-05:00" endTime="2024-11-23T07:06:08.9184339-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e49a30e-09a8-4cb9-a499-332000033958" />
+    <UnitTestResult executionId="0c0313cc-59ce-4580-a779-5707dd1a500f" testId="ca6dc916-7f7e-fc59-e668-fa85cae4399e" testName="ObtenerUsuarioPorId_WithValidId_ReturnsUser" computerName="DESKTOP-03JTJV2" duration="00:00:00.0014480" startTime="2024-11-23T07:06:08.9157287-05:00" endTime="2024-11-23T07:06:08.9171764-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0c0313cc-59ce-4580-a779-5707dd1a500f" />
+    <UnitTestResult executionId="c36c92d7-eae8-4d2f-8b06-85a55530af5a" testId="92d7c8fd-d657-0662-4f2a-967ee5ae146e" testName="Login_WithEmptyEmail_ThrowsArgumentException" computerName="DESKTOP-03JTJV2" duration="00:00:00.0061269" startTime="2024-11-23T07:06:08.9053043-05:00" endTime="2024-11-23T07:06:08.9114307-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c36c92d7-eae8-4d2f-8b06-85a55530af5a" />
+    <UnitTestResult executionId="7fd7f041-9985-4f22-9c1e-fc0cbca927f6" testId="f43bc73f-481b-6045-998a-d47d39dbf24f" testName="RegistroFallidoConDatosIncompletos" computerName="DESKTOP-03JTJV2" duration="00:00:00.0007249" startTime="2024-11-23T07:06:08.8732211-05:00" endTime="2024-11-23T07:06:08.8739467-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7fd7f041-9985-4f22-9c1e-fc0cbca927f6">
+      <Output>
+        <StdOut>Given un nuevo usuario con nombre "", correo "" y contraseña ""&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.DadoUnNuevoUsuario("", "", "") (0.0s)&#xD;
+When intento registrar el usuario&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.CuandoIntentoRegistrarElUsuario() (0.0s)&#xD;
+Then debería ver un mensaje de error de registro&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.EntoncesDeberiaVerUnMensajeDeErrorDeRegistro() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6cfa6eeb-f9b1-46af-b955-90b8ab80d36b" testId="d4d8858b-8da8-666b-9e67-d4e02b038fc4" testName="Login_WithEmptyPassword_ThrowsArgumentException" computerName="DESKTOP-03JTJV2" duration="00:00:00.0011800" startTime="2024-11-23T07:06:08.9117360-05:00" endTime="2024-11-23T07:06:08.9129157-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6cfa6eeb-f9b1-46af-b955-90b8ab80d36b" />
+    <UnitTestResult executionId="c9e96bc0-7a0a-4693-a5e1-619baf1e0377" testId="e76a8fed-6f4b-cccd-b8df-97b14e384ca9" testName="ValidarOperacion_InvalidUsuarioId_ReturnsFalse" computerName="DESKTOP-03JTJV2" duration="00:00:00.0055390" startTime="2024-11-23T07:06:08.8981612-05:00" endTime="2024-11-23T07:06:08.9036990-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9e96bc0-7a0a-4693-a5e1-619baf1e0377" />
+    <UnitTestResult executionId="ea5eef2d-d301-431d-b6e6-48baf42939b9" testId="c55b1a2d-2ab4-231c-adcf-55763781be0c" testName="UsuarioBasicoRealizaOperacionDentroDelLimite" computerName="DESKTOP-03JTJV2" duration="00:00:00.0058340" startTime="2024-11-23T07:06:08.8317460-05:00" endTime="2024-11-23T07:06:08.8375794-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea5eef2d-d301-431d-b6e6-48baf42939b9">
+      <Output>
+        <StdOut>Given un usuario con id 1 y suscripción "basico"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.DadoUnUsuarioConSuscripcion(1, "basico") (0.0s)&#xD;
+When intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+Then la operación debería realizarse correctamente&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.EntoncesLaOperacionDeberiaRealizarseCorrectamente() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0713ffab-5a6a-4e75-a279-14248d55871d" testId="9100dae1-cf11-589b-d7d2-37ade1fdc64f" testName="UsuarioBasicoExcedeLimiteDeOperaciones" computerName="DESKTOP-03JTJV2" duration="00:00:00.0063640" startTime="2024-11-23T07:06:08.8253547-05:00" endTime="2024-11-23T07:06:08.8317181-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0713ffab-5a6a-4e75-a279-14248d55871d">
+      <Output>
+        <StdOut>Given un usuario con id 1 y suscripción "basico"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.DadoUnUsuarioConSuscripcion(1, "basico") (0.0s)&#xD;
+When intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+And intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+And intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+And intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+And intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+And intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+Then la operación debería ser rechazada&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.EntoncesLaOperacionDeberiaSerRechazada() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3afe161d-b11c-40be-91a7-95bca081d30d" testId="1ec00688-5e54-3c5d-874b-e51e7200c275" testName="LoginExitoso" computerName="DESKTOP-03JTJV2" duration="00:00:00.0226750" startTime="2024-11-23T07:06:08.7947814-05:00" endTime="2024-11-23T07:06:08.8174564-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3afe161d-b11c-40be-91a7-95bca081d30d">
+      <Output>
+        <StdOut>Given un usuario con correo "test@test.com" y contraseña "password123"&#xD;
+-&gt; done: LoginFeatureSteps.DadoUnUsuarioConCorreoYContrasena("test@test.com", "password123") (0.0s)&#xD;
+When intento iniciar sesión&#xD;
+-&gt; done: LoginFeatureSteps.CuandoIntentoIniciarSesion() (0.0s)&#xD;
+Then debería iniciar sesión correctamente&#xD;
+-&gt; done: LoginFeatureSteps.EntoncesDeberiaIniciarSesionCorrectamente() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="89f6dcbd-532d-46cc-a3d4-46d2491979ef" testId="7d4803b4-080b-5543-3a1e-8c9f0dfb7559" testName="RegistrarUsuario_WithNewEmail_Succeeds" computerName="DESKTOP-03JTJV2" duration="00:00:00.0027640" startTime="2024-11-23T07:06:08.9281098-05:00" endTime="2024-11-23T07:06:08.9308728-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89f6dcbd-532d-46cc-a3d4-46d2491979ef" />
+    <UnitTestResult executionId="d1abc633-8321-46fe-af4c-b89b46c5a14e" testId="cf1b8907-2f02-9a57-b52e-326ada6827bb" testName="ActualizarSuscripcion_InvalidData_ThrowsException" computerName="DESKTOP-03JTJV2" duration="00:00:00.0767920" startTime="2024-11-23T07:06:08.6884909-05:00" endTime="2024-11-23T07:06:08.7652108-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d1abc633-8321-46fe-af4c-b89b46c5a14e" />
+    <UnitTestResult executionId="cc05b8b0-deea-4fc8-82f3-c2e6ab1f9b01" testId="4d2c6187-64b2-cd22-5db1-5138ede31542" testName="RegistroFallidoConCorreoExistente" computerName="DESKTOP-03JTJV2" duration="00:00:00.0028990" startTime="2024-11-23T07:06:08.8651558-05:00" endTime="2024-11-23T07:06:08.8680548-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc05b8b0-deea-4fc8-82f3-c2e6ab1f9b01">
+      <Output>
+        <StdOut>Given un nuevo usuario con nombre "Usuario Duplicado", correo "test@test.com" y contraseña "pass123"&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.DadoUnNuevoUsuario("Usuario Duplicado", "test@test.com", "pass123") (0.0s)&#xD;
+When intento registrar el usuario&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.CuandoIntentoRegistrarElUsuario() (0.0s)&#xD;
+Then debería ver un mensaje de error de registro&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.EntoncesDeberiaVerUnMensajeDeErrorDeRegistro() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4e3766a9-ca01-4e87-a171-544cf24b6b7e" testId="2bcc75c1-eda8-5374-317c-82777e389e21" testName="ObtenerPorUsuarioId_ValidUsuarioId_ReturnsDetalleSuscripcion" computerName="DESKTOP-03JTJV2" duration="00:00:00.0094430" startTime="2024-11-23T07:06:08.7814965-05:00" endTime="2024-11-23T07:06:08.7909388-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e3766a9-ca01-4e87-a171-544cf24b6b7e" />
+    <UnitTestResult executionId="ada27e59-30db-41a5-93c0-5eb551c9c518" testId="4e1c93d0-3c70-b4e9-e88b-dbfc7a061a51" testName="ValidarOperacion_ValidUsuarioId_ReturnsTrue" computerName="DESKTOP-03JTJV2" duration="00:00:00.0006440" startTime="2024-11-23T07:06:08.9044640-05:00" endTime="2024-11-23T07:06:08.9051076-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ada27e59-30db-41a5-93c0-5eb551c9c518" />
+    <UnitTestResult executionId="d2888b70-10c0-4fa9-a5de-b5aa227d5d6e" testId="fd7786e0-4e5d-524a-a99a-4759e5a4fb42" testName="RegistrarUsuario_WithEmptyEmail_ThrowsArgumentException" computerName="DESKTOP-03JTJV2" duration="00:00:00.0029790" startTime="2024-11-23T07:06:08.9233020-05:00" endTime="2024-11-23T07:06:08.9262813-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2888b70-10c0-4fa9-a5de-b5aa227d5d6e" />
+    <UnitTestResult executionId="52b34fea-21c1-4ab7-9088-94cd3c890585" testId="1fb458f6-7b3a-91a9-7e4d-e5864b28dbab" testName="ActualizarSuscripcion_ValidData_UpdatesSuscripcion" computerName="DESKTOP-03JTJV2" duration="00:00:00.0072800" startTime="2024-11-23T07:06:08.7666464-05:00" endTime="2024-11-23T07:06:08.7739255-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52b34fea-21c1-4ab7-9088-94cd3c890585" />
+    <UnitTestResult executionId="e991ea55-d239-49aa-9f26-028203646ec2" testId="337127b4-79b0-8142-edac-045a5466c0ba" testName="ObtenerUsuarios_ReturnsUserList" computerName="DESKTOP-03JTJV2" duration="00:00:00.0040240" startTime="2024-11-23T07:06:08.9184593-05:00" endTime="2024-11-23T07:06:08.9224818-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e991ea55-d239-49aa-9f26-028203646ec2" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="ActualizarSuscripcion_ValidData_UpdatesSuscripcion" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="1fb458f6-7b3a-91a9-7e4d-e5864b28dbab">
+      <Execution id="52b34fea-21c1-4ab7-9088-94cd3c890585" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.DetalleSuscripcionRepositoryTests" name="ActualizarSuscripcion_ValidData_UpdatesSuscripcion" />
+    </UnitTest>
+    <UnitTest name="ObtenerPorUsuarioId_InvalidUsuarioId_ReturnsNull" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="ed38b0cf-b648-c69b-4748-aefd8800c79f">
+      <Execution id="bf8def8a-2634-4633-b1ac-9d3e107a2d38" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.DetalleSuscripcionRepositoryTests" name="ObtenerPorUsuarioId_InvalidUsuarioId_ReturnsNull" />
+    </UnitTest>
+    <UnitTest name="UsuarioPremiumRealizaOperacionesSinLimite" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="2c517892-49e9-0c11-cb10-8c6b0d723bb5">
+      <Execution id="b361cabe-d750-4aaf-b957-fd9ac11cdd7c" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.Features.OperacionesConPDFsFeature" name="UsuarioPremiumRealizaOperacionesSinLimite" />
+    </UnitTest>
+    <UnitTest name="UsuarioBasicoExcedeLimiteDeOperaciones" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="9100dae1-cf11-589b-d7d2-37ade1fdc64f">
+      <Execution id="0713ffab-5a6a-4e75-a279-14248d55871d" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.Features.OperacionesConPDFsFeature" name="UsuarioBasicoExcedeLimiteDeOperaciones" />
+    </UnitTest>
+    <UnitTest name="RegistrarUsuario_WithEmptyPassword_ThrowsArgumentException" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="a101fd59-00d5-6cf4-6a17-fca1e2eb331b">
+      <Execution id="578ada2b-4931-4d30-8a41-d2f407fe970b" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.UsuarioRepositoryTests" name="RegistrarUsuario_WithEmptyPassword_ThrowsArgumentException" />
+    </UnitTest>
+    <UnitTest name="RegistroFallidoConDatosIncompletos" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="f43bc73f-481b-6045-998a-d47d39dbf24f">
+      <Execution id="7fd7f041-9985-4f22-9c1e-fc0cbca927f6" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.Features.RegistroDeUsuarioFeature" name="RegistroFallidoConDatosIncompletos" />
+    </UnitTest>
+    <UnitTest name="LoginFallidoConCredencialesInvalidas" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="0606b363-345d-89f0-85e2-611625c2f9a0">
+      <Execution id="17fabeaf-86fc-42f6-9f8b-72f9aa3a3619" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.Features.LoginDeUsuarioFeature" name="LoginFallidoConCredencialesInvalidas" />
+    </UnitTest>
+    <UnitTest name="RegistroExitoso" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="7c7fcdcf-86fb-cfaf-0213-32dbc81881b0">
+      <Execution id="a8743a98-bc9d-4f71-90f9-deeb56beb75b" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.Features.RegistroDeUsuarioFeature" name="RegistroExitoso" />
+    </UnitTest>
+    <UnitTest name="LoginExitoso" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="1ec00688-5e54-3c5d-874b-e51e7200c275">
+      <Execution id="3afe161d-b11c-40be-91a7-95bca081d30d" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.Features.LoginDeUsuarioFeature" name="LoginExitoso" />
+    </UnitTest>
+    <UnitTest name="ObtenerPorUsuarioId_ValidUsuarioId_ReturnsDetalleSuscripcion" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="2bcc75c1-eda8-5374-317c-82777e389e21">
+      <Execution id="4e3766a9-ca01-4e87-a171-544cf24b6b7e" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.DetalleSuscripcionRepositoryTests" name="ObtenerPorUsuarioId_ValidUsuarioId_ReturnsDetalleSuscripcion" />
+    </UnitTest>
+    <UnitTest name="LoginFallidoConCorreoVacio" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="41b120ac-62ef-3ed5-db23-54c697fa0ba1">
+      <Execution id="4599e00c-f594-4f2e-b535-dc224ec29c5a" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.Features.LoginDeUsuarioFeature" name="LoginFallidoConCorreoVacio" />
+    </UnitTest>
+    <UnitTest name="UsuarioBasicoRealizaOperacionDentroDelLimite" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="c55b1a2d-2ab4-231c-adcf-55763781be0c">
+      <Execution id="ea5eef2d-d301-431d-b6e6-48baf42939b9" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.Features.OperacionesConPDFsFeature" name="UsuarioBasicoRealizaOperacionDentroDelLimite" />
+    </UnitTest>
+    <UnitTest name="ObtenerUsuarios_ReturnsUserList" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="337127b4-79b0-8142-edac-045a5466c0ba">
+      <Execution id="e991ea55-d239-49aa-9f26-028203646ec2" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.UsuarioRepositoryTests" name="ObtenerUsuarios_ReturnsUserList" />
+    </UnitTest>
+    <UnitTest name="ObtenerOperacionesPorUsuario_InvalidUsuarioId_ReturnsEmptyList" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="b30ceab3-7e13-ebb8-a0c6-6b5e2477e816">
+      <Execution id="9e04f238-de02-422c-92c2-d9222e19c0f4" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.OperacionesPDFRepositoryTests" name="ObtenerOperacionesPorUsuario_InvalidUsuarioId_ReturnsEmptyList" />
+    </UnitTest>
+    <UnitTest name="ObtenerOperacionesPorUsuario_ValidUsuarioId_ReturnsOperaciones" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="0c801950-58c4-828b-7fec-0342669066f3">
+      <Execution id="331c0a72-622b-4e33-b0ba-7910d499bc35" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.OperacionesPDFRepositoryTests" name="ObtenerOperacionesPorUsuario_ValidUsuarioId_ReturnsOperaciones" />
+    </UnitTest>
+    <UnitTest name="ObtenerUsuarioPorId_WithValidId_ReturnsUser" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="ca6dc916-7f7e-fc59-e668-fa85cae4399e">
+      <Execution id="0c0313cc-59ce-4580-a779-5707dd1a500f" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.UsuarioRepositoryTests" name="ObtenerUsuarioPorId_WithValidId_ReturnsUser" />
+    </UnitTest>
+    <UnitTest name="ActualizarSuscripcion_InvalidData_ThrowsException" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="cf1b8907-2f02-9a57-b52e-326ada6827bb">
+      <Execution id="d1abc633-8321-46fe-af4c-b89b46c5a14e" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.DetalleSuscripcionRepositoryTests" name="ActualizarSuscripcion_InvalidData_ThrowsException" />
+    </UnitTest>
+    <UnitTest name="ContarOperacionesRealizadas_ValidUsuarioId_ReturnsCorrectCount" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="d23ee3e6-b0dc-1528-04f1-ae4ce599d963">
+      <Execution id="007da4d4-4366-4207-83d1-b2bcd5ac53a8" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.OperacionesPDFRepositoryTests" name="ContarOperacionesRealizadas_ValidUsuarioId_ReturnsCorrectCount" />
+    </UnitTest>
+    <UnitTest name="Login_WithEmptyPassword_ThrowsArgumentException" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="d4d8858b-8da8-666b-9e67-d4e02b038fc4">
+      <Execution id="6cfa6eeb-f9b1-46af-b955-90b8ab80d36b" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.UsuarioRepositoryTests" name="Login_WithEmptyPassword_ThrowsArgumentException" />
+    </UnitTest>
+    <UnitTest name="RegistroFallidoConCorreoExistente" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="4d2c6187-64b2-cd22-5db1-5138ede31542">
+      <Execution id="cc05b8b0-deea-4fc8-82f3-c2e6ab1f9b01" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.Features.RegistroDeUsuarioFeature" name="RegistroFallidoConCorreoExistente" />
+    </UnitTest>
+    <UnitTest name="ContarOperacionesRealizadas_InvalidUsuarioId_ReturnsZero" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="907c981b-46a6-90fb-fd68-5c6212bdbe31">
+      <Execution id="74d109a1-b9c5-447e-b40a-433dfc7328e4" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.OperacionesPDFRepositoryTests" name="ContarOperacionesRealizadas_InvalidUsuarioId_ReturnsZero" />
+    </UnitTest>
+    <UnitTest name="Login_WithInvalidCredentials_ReturnsNull" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="f486c3ac-ea38-b343-0a41-f6e3ee532314">
+      <Execution id="8e5cf029-8e6a-4557-ab1b-68ec626d0585" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.UsuarioRepositoryTests" name="Login_WithInvalidCredentials_ReturnsNull" />
+    </UnitTest>
+    <UnitTest name="Login_WithEmptyEmail_ThrowsArgumentException" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="92d7c8fd-d657-0662-4f2a-967ee5ae146e">
+      <Execution id="c36c92d7-eae8-4d2f-8b06-85a55530af5a" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.UsuarioRepositoryTests" name="Login_WithEmptyEmail_ThrowsArgumentException" />
+    </UnitTest>
+    <UnitTest name="RegistrarUsuario_WithEmptyEmail_ThrowsArgumentException" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="fd7786e0-4e5d-524a-a99a-4759e5a4fb42">
+      <Execution id="d2888b70-10c0-4fa9-a5de-b5aa227d5d6e" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.UsuarioRepositoryTests" name="RegistrarUsuario_WithEmptyEmail_ThrowsArgumentException" />
+    </UnitTest>
+    <UnitTest name="ObtenerUsuarioPorId_WithZeroId_ThrowsArgumentException" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="0e0f72c5-5196-71f9-729f-25a220c7c635">
+      <Execution id="9e49a30e-09a8-4cb9-a499-332000033958" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.UsuarioRepositoryTests" name="ObtenerUsuarioPorId_WithZeroId_ThrowsArgumentException" />
+    </UnitTest>
+    <UnitTest name="RegistrarUsuario_WithNewEmail_Succeeds" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="7d4803b4-080b-5543-3a1e-8c9f0dfb7559">
+      <Execution id="89f6dcbd-532d-46cc-a3d4-46d2491979ef" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.UsuarioRepositoryTests" name="RegistrarUsuario_WithNewEmail_Succeeds" />
+    </UnitTest>
+    <UnitTest name="Login_WithValidCredentials_ReturnsUser" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="cc2ed7a8-df3f-e275-1139-39bb1411c597">
+      <Execution id="a46a9d60-35e9-48fd-abd7-971362167c25" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.UsuarioRepositoryTests" name="Login_WithValidCredentials_ReturnsUser" />
+    </UnitTest>
+    <UnitTest name="ValidarOperacion_InvalidUsuarioId_ReturnsFalse" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="e76a8fed-6f4b-cccd-b8df-97b14e384ca9">
+      <Execution id="c9e96bc0-7a0a-4693-a5e1-619baf1e0377" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.OperacionesPDFRepositoryTests" name="ValidarOperacion_InvalidUsuarioId_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="RegistrarUsuario_WithNullUser_ThrowsArgumentNullException" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="d5a50123-fb74-6b6f-431a-41f426edd539">
+      <Execution id="61b29f60-f665-430a-a91e-5f14f05f4ad4" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.UsuarioRepositoryTests" name="RegistrarUsuario_WithNullUser_ThrowsArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="ValidarOperacion_ValidUsuarioId_ReturnsTrue" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="4e1c93d0-3c70-b4e9-e88b-dbfc7a061a51">
+      <Execution id="ada27e59-30db-41a5-93c0-5eb551c9c518" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.OperacionesPDFRepositoryTests" name="ValidarOperacion_ValidUsuarioId_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="RegistrarOperacionPDF_ValidData_ReturnsTrue" storage="d:\nueva carpeta (11)\nueva carpeta\proyecto-si784-2024-ii-u1-floresr_salinas_ticahuanca\negociopdf.tests\bin\debug\net8.0\negociopdf.tests.dll" id="edb9e72f-732b-2df7-97e8-42f4a4cfc3c2">
+      <Execution id="3f9b2404-4b1b-4b0d-9e04-ebb75be39481" />
+      <TestMethod codeBase="D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="NegocioPDF.Tests.OperacionesPDFRepositoryTests" name="RegistrarOperacionPDF_ValidData_ReturnsTrue" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="ed38b0cf-b648-c69b-4748-aefd8800c79f" executionId="bf8def8a-2634-4633-b1ac-9d3e107a2d38" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c517892-49e9-0c11-cb10-8c6b0d723bb5" executionId="b361cabe-d750-4aaf-b957-fd9ac11cdd7c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b30ceab3-7e13-ebb8-a0c6-6b5e2477e816" executionId="9e04f238-de02-422c-92c2-d9222e19c0f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7c7fcdcf-86fb-cfaf-0213-32dbc81881b0" executionId="a8743a98-bc9d-4f71-90f9-deeb56beb75b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="41b120ac-62ef-3ed5-db23-54c697fa0ba1" executionId="4599e00c-f594-4f2e-b535-dc224ec29c5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d23ee3e6-b0dc-1528-04f1-ae4ce599d963" executionId="007da4d4-4366-4207-83d1-b2bcd5ac53a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc2ed7a8-df3f-e275-1139-39bb1411c597" executionId="a46a9d60-35e9-48fd-abd7-971362167c25" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a101fd59-00d5-6cf4-6a17-fca1e2eb331b" executionId="578ada2b-4931-4d30-8a41-d2f407fe970b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0606b363-345d-89f0-85e2-611625c2f9a0" executionId="17fabeaf-86fc-42f6-9f8b-72f9aa3a3619" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="edb9e72f-732b-2df7-97e8-42f4a4cfc3c2" executionId="3f9b2404-4b1b-4b0d-9e04-ebb75be39481" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d5a50123-fb74-6b6f-431a-41f426edd539" executionId="61b29f60-f665-430a-a91e-5f14f05f4ad4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0c801950-58c4-828b-7fec-0342669066f3" executionId="331c0a72-622b-4e33-b0ba-7910d499bc35" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f486c3ac-ea38-b343-0a41-f6e3ee532314" executionId="8e5cf029-8e6a-4557-ab1b-68ec626d0585" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="907c981b-46a6-90fb-fd68-5c6212bdbe31" executionId="74d109a1-b9c5-447e-b40a-433dfc7328e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0e0f72c5-5196-71f9-729f-25a220c7c635" executionId="9e49a30e-09a8-4cb9-a499-332000033958" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ca6dc916-7f7e-fc59-e668-fa85cae4399e" executionId="0c0313cc-59ce-4580-a779-5707dd1a500f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92d7c8fd-d657-0662-4f2a-967ee5ae146e" executionId="c36c92d7-eae8-4d2f-8b06-85a55530af5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f43bc73f-481b-6045-998a-d47d39dbf24f" executionId="7fd7f041-9985-4f22-9c1e-fc0cbca927f6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d4d8858b-8da8-666b-9e67-d4e02b038fc4" executionId="6cfa6eeb-f9b1-46af-b955-90b8ab80d36b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e76a8fed-6f4b-cccd-b8df-97b14e384ca9" executionId="c9e96bc0-7a0a-4693-a5e1-619baf1e0377" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c55b1a2d-2ab4-231c-adcf-55763781be0c" executionId="ea5eef2d-d301-431d-b6e6-48baf42939b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9100dae1-cf11-589b-d7d2-37ade1fdc64f" executionId="0713ffab-5a6a-4e75-a279-14248d55871d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ec00688-5e54-3c5d-874b-e51e7200c275" executionId="3afe161d-b11c-40be-91a7-95bca081d30d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7d4803b4-080b-5543-3a1e-8c9f0dfb7559" executionId="89f6dcbd-532d-46cc-a3d4-46d2491979ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cf1b8907-2f02-9a57-b52e-326ada6827bb" executionId="d1abc633-8321-46fe-af4c-b89b46c5a14e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4d2c6187-64b2-cd22-5db1-5138ede31542" executionId="cc05b8b0-deea-4fc8-82f3-c2e6ab1f9b01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2bcc75c1-eda8-5374-317c-82777e389e21" executionId="4e3766a9-ca01-4e87-a171-544cf24b6b7e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e1c93d0-3c70-b4e9-e88b-dbfc7a061a51" executionId="ada27e59-30db-41a5-93c0-5eb551c9c518" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd7786e0-4e5d-524a-a99a-4759e5a4fb42" executionId="d2888b70-10c0-4fa9-a5de-b5aa227d5d6e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fb458f6-7b3a-91a9-7e4d-e5864b28dbab" executionId="52b34fea-21c1-4ab7-9088-94cd3c890585" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="337127b4-79b0-8142-edac-045a5466c0ba" executionId="e991ea55-d239-49aa-9f26-028203646ec2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados sin formato de lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="31" executed="31" passed="31" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.5.0.0: Test execution started&#xD;
+Running all tests in D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll&#xD;
+   NUnit3TestExecutor discovered 31 of 31 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.5.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DESKTOP-03JTJV2" outcome="Warning" timestamp="2024-11-23T07:06:08.8201200-05:00">
+        <Text>Given un usuario con correo "test@test.com" y contraseña "password123"&#xD;
+-&gt; done: LoginFeatureSteps.DadoUnUsuarioConCorreoYContrasena("test@test.com", "password123") (0.0s)&#xD;
+When intento iniciar sesión&#xD;
+-&gt; done: LoginFeatureSteps.CuandoIntentoIniciarSesion() (0.0s)&#xD;
+Then debería iniciar sesión correctamente&#xD;
+-&gt; done: LoginFeatureSteps.EntoncesDeberiaIniciarSesionCorrectamente() (0.0s)&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-03JTJV2" outcome="Warning" timestamp="2024-11-23T07:06:08.8223433-05:00">
+        <Text>Given un usuario con correo "" y contraseña "password123"&#xD;
+-&gt; done: LoginFeatureSteps.DadoUnUsuarioConCorreoYContrasena("", "password123") (0.0s)&#xD;
+When intento iniciar sesión&#xD;
+-&gt; done: LoginFeatureSteps.CuandoIntentoIniciarSesion() (0.0s)&#xD;
+Then debería ver un mensaje de error&#xD;
+-&gt; done: LoginFeatureSteps.EntoncesDeberiaVerUnMensajeDeError() (0.0s)&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-03JTJV2" outcome="Warning" timestamp="2024-11-23T07:06:08.8233017-05:00">
+        <Text>Given un usuario con correo "invalid@test.com" y contraseña "wrongpass"&#xD;
+-&gt; done: LoginFeatureSteps.DadoUnUsuarioConCorreoYContrasena("invalid@test.com", "wrongpass") (0.0s)&#xD;
+When intento iniciar sesión&#xD;
+-&gt; done: LoginFeatureSteps.CuandoIntentoIniciarSesion() (0.0s)&#xD;
+Then debería ver un mensaje de error&#xD;
+-&gt; done: LoginFeatureSteps.EntoncesDeberiaVerUnMensajeDeError() (0.0s)&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-03JTJV2" outcome="Warning" timestamp="2024-11-23T07:06:08.8326048-05:00">
+        <Text>Given un usuario con id 1 y suscripción "basico"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.DadoUnUsuarioConSuscripcion(1, "basico") (0.0s)&#xD;
+When intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+And intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+And intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+And intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+And intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+And intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+Then la operación debería ser rechazada&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.EntoncesLaOperacionDeberiaSerRechazada() (0.0s)&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-03JTJV2" outcome="Warning" timestamp="2024-11-23T07:06:08.8451404-05:00">
+        <Text>Given un usuario con id 1 y suscripción "basico"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.DadoUnUsuarioConSuscripcion(1, "basico") (0.0s)&#xD;
+When intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+Then la operación debería realizarse correctamente&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.EntoncesLaOperacionDeberiaRealizarseCorrectamente() (0.0s)&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-03JTJV2" outcome="Warning" timestamp="2024-11-23T07:06:08.9432377-05:00">
+        <Text>Given un usuario con id 2 y suscripción "premium"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.DadoUnUsuarioConSuscripcion(2, "premium") (0.0s)&#xD;
+When intento realizar una operación "conversion"&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.CuandoIntentoRealizarUnaOperacion("conversion") (0.0s)&#xD;
+Then la operación debería realizarse correctamente&#xD;
+-&gt; done: OperacionesPDFFeatureSteps.EntoncesLaOperacionDeberiaRealizarseCorrectamente() (0.0s)&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-03JTJV2" outcome="Warning" timestamp="2024-11-23T07:06:08.9457179-05:00">
+        <Text>Given un nuevo usuario con nombre "Nuevo Usuario", correo "nuevo@test.com" y contraseña "newpass123"&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.DadoUnNuevoUsuario("Nuevo Usuario", "nuevo@test.com", "newpass123") (0.0s)&#xD;
+When intento registrar el usuario&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.CuandoIntentoRegistrarElUsuario() (0.0s)&#xD;
+Then el usuario debería registrarse correctamente&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.EntoncesElUsuarioDeberiaRegistrarseCorrectamente() (0.0s)&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-03JTJV2" outcome="Warning" timestamp="2024-11-23T07:06:08.9522639-05:00">
+        <Text>Given un nuevo usuario con nombre "Usuario Duplicado", correo "test@test.com" y contraseña "pass123"&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.DadoUnNuevoUsuario("Usuario Duplicado", "test@test.com", "pass123") (0.0s)&#xD;
+When intento registrar el usuario&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.CuandoIntentoRegistrarElUsuario() (0.0s)&#xD;
+Then debería ver un mensaje de error de registro&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.EntoncesDeberiaVerUnMensajeDeErrorDeRegistro() (0.0s)&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-03JTJV2" outcome="Warning" timestamp="2024-11-23T07:06:08.9535425-05:00">
+        <Text>Given un nuevo usuario con nombre "", correo "" y contraseña ""&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.DadoUnNuevoUsuario("", "", "") (0.0s)&#xD;
+When intento registrar el usuario&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.CuandoIntentoRegistrarElUsuario() (0.0s)&#xD;
+Then debería ver un mensaje de error de registro&#xD;
+-&gt; done: RegistroUsuarioFeatureSteps.EntoncesDeberiaVerUnMensajeDeErrorDeRegistro() (0.0s)&#xD;
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>
