@@ -1,0 +1,155 @@
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\appsettings.Development.json
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\appsettings.json
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\PROYECTOPDF.staticwebassets.runtime.json
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\PROYECTOPDF.exe
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\PROYECTOPDF.deps.json
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\PROYECTOPDF.runtimeconfig.json
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\PROYECTOPDF.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\PROYECTOPDF.pdb
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\Dapper.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\Dapper.Contrib.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\Google.Protobuf.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\itext.barcodes.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\itext.bouncy-castle-connector.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\itext.forms.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\itext.io.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\itext.kernel.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\itext.layout.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\itext.pdfa.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\itext.pdfua.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\itext.sign.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\itext.styledxmlparser.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\itext.svg.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\itext.commons.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\itext.html2pdf.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\MySql.Data.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\PdfSharp.Charting.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\PdfSharp.Quality.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\PdfSharp.Snippets.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\PdfSharp.System.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\PdfSharp.WPFonts.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\PdfSharp.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\ZstdSharp.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\de\PdfSharp.Charting.resources.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\de\PdfSharp.resources.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\NegocioPDF.dll
+D:\C#\PRUEBA\PROYECTOPDF\bin\Debug\net8.0\NegocioPDF.pdb
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\PROYECTOPDF.csproj.AssemblyReference.cache
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\PROYECTOPDF.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\PROYECTOPDF.AssemblyInfoInputs.cache
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\PROYECTOPDF.AssemblyInfo.cs
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\PROYECTOPDF.csproj.CoreCompileInputs.cache
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\PROYECTOPDF.MvcApplicationPartsAssemblyInfo.cache
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\PROYECTOPDF.RazorAssemblyInfo.cache
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\PROYECTOPDF.RazorAssemblyInfo.cs
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\staticwebassets.build.json
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\staticwebassets.development.json
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\staticwebassets\msbuild.PROYECTOPDF.Microsoft.AspNetCore.StaticWebAssets.props
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\staticwebassets\msbuild.build.PROYECTOPDF.props
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PROYECTOPDF.props
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PROYECTOPDF.props
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\staticwebassets.pack.json
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\scopedcss\bundle\PROYECTOPDF.styles.css
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\scopedcss\projectbundle\PROYECTOPDF.bundle.scp.css
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\PROYECTO.BF91A7B7.Up2Date
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\PROYECTOPDF.dll
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\refint\PROYECTOPDF.dll
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\PROYECTOPDF.pdb
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\PROYECTOPDF.genruntimeconfig.cache
+D:\C#\PRUEBA\PROYECTOPDF\obj\Debug\net8.0\ref\PROYECTOPDF.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\appsettings.Development.json
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\appsettings.json
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\PROYECTOPDF.staticwebassets.runtime.json
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\PROYECTOPDF.exe
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\PROYECTOPDF.deps.json
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\PROYECTOPDF.runtimeconfig.json
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\PROYECTOPDF.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\PROYECTOPDF.pdb
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\Dapper.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\Dapper.Contrib.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\Google.Protobuf.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\itext.barcodes.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\itext.bouncy-castle-connector.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\itext.forms.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\itext.io.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\itext.kernel.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\itext.layout.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\itext.pdfa.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\itext.pdfua.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\itext.sign.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\itext.styledxmlparser.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\itext.svg.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\itext.commons.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\itext.html2pdf.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\MySql.Data.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\PdfSharp.Charting.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\PdfSharp.Quality.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\PdfSharp.Snippets.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\PdfSharp.System.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\PdfSharp.WPFonts.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\PdfSharp.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\ZstdSharp.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\de\PdfSharp.Charting.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\de\PdfSharp.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\NegocioPDF.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\bin\Debug\net8.0\NegocioPDF.pdb
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\PROYECTOPDF.csproj.AssemblyReference.cache
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\PROYECTOPDF.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\PROYECTOPDF.AssemblyInfoInputs.cache
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\PROYECTOPDF.AssemblyInfo.cs
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\PROYECTOPDF.csproj.CoreCompileInputs.cache
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\PROYECTOPDF.MvcApplicationPartsAssemblyInfo.cache
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\PROYECTOPDF.RazorAssemblyInfo.cache
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\PROYECTOPDF.RazorAssemblyInfo.cs
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\PROYECTOPDF.sourcelink.json
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\staticwebassets.build.json
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\staticwebassets.development.json
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\staticwebassets\msbuild.PROYECTOPDF.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\staticwebassets\msbuild.build.PROYECTOPDF.props
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PROYECTOPDF.props
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PROYECTOPDF.props
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\scopedcss\bundle\PROYECTOPDF.styles.css
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\scopedcss\projectbundle\PROYECTOPDF.bundle.scp.css
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\PROYECTO.BF91A7B7.Up2Date
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\PROYECTOPDF.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\refint\PROYECTOPDF.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\PROYECTOPDF.pdb
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\PROYECTOPDF.genruntimeconfig.cache
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\proyectoPDF\obj\Debug\net8.0\ref\PROYECTOPDF.dll

@@ -1,0 +1,386 @@
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_NegocioPDF.Tests
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\testhost.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\testhost.exe
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\NUnit3.TestAdapter.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\nunit.engine.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\nunit.engine.api.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\nunit.engine.core.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\testcentric.engine.metadata.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.deps.json
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.runtimeconfig.json
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.pdb
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\Dapper.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\Dapper.Contrib.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\Google.Protobuf.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CommunicationUtilities.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CrossPlatEngine.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\MySql.Data.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\NuGet.Frameworks.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\nunit.framework.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ZstdSharp.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.pdb
+D:\C#\PRUEBA\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.csproj.AssemblyReference.cache
+D:\C#\PRUEBA\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\PRUEBA\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.AssemblyInfoInputs.cache
+D:\C#\PRUEBA\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.AssemblyInfo.cs
+D:\C#\PRUEBA\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.csproj.CoreCompileInputs.cache
+D:\C#\PRUEBA\NegocioPDF.Tests\obj\Debug\net8.0\NegocioP.0C205107.Up2Date
+D:\C#\PRUEBA\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\obj\Debug\net8.0\refint\NegocioPDF.Tests.dll
+D:\C#\PRUEBA\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.pdb
+D:\C#\PRUEBA\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.genruntimeconfig.cache
+D:\C#\PRUEBA\NegocioPDF.Tests\obj\Debug\net8.0\ref\NegocioPDF.Tests.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_NegocioPDF.Tests
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\testhost.exe
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\testhost.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NUnit3.TestAdapter.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\nunit.engine.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\nunit.engine.api.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\nunit.engine.core.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\testcentric.engine.metadata.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.deps.json
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.runtimeconfig.json
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.pdb
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Dapper.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Dapper.Contrib.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Google.Protobuf.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CommunicationUtilities.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CrossPlatEngine.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\MySql.Data.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NuGet.Frameworks.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\nunit.framework.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ZstdSharp.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.pdb
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.csproj.AssemblyReference.cache
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.AssemblyInfoInputs.cache
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.AssemblyInfo.cs
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.csproj.CoreCompileInputs.cache
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.sourcelink.json
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioP.0C205107.Up2Date
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\refint\NegocioPDF.Tests.dll
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.pdb
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.genruntimeconfig.cache
+D:\CALIDAD SOFTWARE\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\ref\NegocioPDF.Tests.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_NegocioPDF.Tests
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.csproj.AssemblyReference.cache
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.AssemblyInfoInputs.cache
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.AssemblyInfo.cs
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.csproj.CoreCompileInputs.cache
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.sourcelink.json
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\refint\NegocioPDF.Tests.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.pdb
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\testhost.exe
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\testhost.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NUnit3.TestAdapter.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\nunit.engine.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\nunit.engine.api.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\nunit.engine.core.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\testcentric.engine.metadata.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.deps.json
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.runtimeconfig.json
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.Tests.pdb
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Castle.Core.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Dapper.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Dapper.Contrib.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Google.Protobuf.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CommunicationUtilities.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CrossPlatEngine.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Moq.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\MySql.Data.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NuGet.Frameworks.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\nunit.framework.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ZstdSharp.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\NegocioPDF.pdb
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioP.0C205107.Up2Date
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\NegocioPDF.Tests.genruntimeconfig.cache
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\obj\Debug\net8.0\ref\NegocioPDF.Tests.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\BoDi.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Gherkin.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\TechTalk.SpecFlow.dll
+D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF.Tests\bin\Debug\net8.0\SpecFlow.Internal.Json.dll
