@@ -1,29 +1,39 @@
 name: SonarQube Cloud
+
 on:
   push:
     branches:
       - main
   pull_request:
     types: [opened, synchronize, reopened]
+
 jobs:
   build:
     name: Build and analyze
     runs-on: windows-latest
     steps:
+      # Configurar el entorno de Java
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: 17
-          distribution: 'zulu' # Alternative distribution options are available.
-      - uses: actions/checkout@v4
+          distribution: 'zulu'
+
+      # Clonar el repositorio en una ruta más corta
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+          fetch-depth: 0
+          path: repo # Cambia el directorio a "repo" para evitar rutas largas
+
+      # Cache de dependencias de SonarQube
       - name: Cache SonarQube Cloud packages
         uses: actions/cache@v4
         with:
           path: ~\sonar\cache
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
+
       - name: Cache SonarQube Cloud scanner
         id: cache-sonar-scanner
         uses: actions/cache@v4
@@ -31,18 +41,33 @@ jobs:
           path: .\.sonar\scanner
           key: ${{ runner.os }}-sonar-scanner
           restore-keys: ${{ runner.os }}-sonar-scanner
+
+      # Instalar el SonarQube scanner si no está en caché
       - name: Install SonarQube Cloud scanner
         if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
         shell: powershell
         run: |
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
+
+      # Configuración y análisis con SonarQube
       - name: Build and analyze
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token de GitHub
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}    # Token de SonarQube
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
+          # Inicia el análisis indicando el directorio base con una ruta más corta
+          .\repo\.sonar\scanner\dotnet-sonarscanner begin `
+            /k:"pdftest_pdftest" `
+            /o:"pdftest" `
+            /d:sonar.token="${{ secrets.SONAR_TOKEN }}" `
+            /d:sonar.host.url="https://sonarcloud.io" `
+            /d:sonar.projectBaseDir="D:\a\repo"
+
+          # Construye el proyecto
           dotnet build
-          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
+
+          # Finaliza el análisis
+          .\repo\.sonar\scanner\dotnet-sonarscanner end `
+            /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
