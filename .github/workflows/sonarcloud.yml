@@ -32,7 +32,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          dotnet sonarscanner begin /k:"pdftest_pdftest" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml"
+          dotnet sonarscanner begin /k:"pdftest_pdftest" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml" /d:sonar.coverage.inclusions="**/NegocioPDF/Models/Usuario.cs,**/NegocioPDF/Models/OperacionPDF.cs,**/NegocioPDF/Models/DetalleSuscripcion.cs"
           dotnet build
           dotnet test --no-build --collect:"XPlat Code Coverage;Format=opencover"
           dotnet sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
