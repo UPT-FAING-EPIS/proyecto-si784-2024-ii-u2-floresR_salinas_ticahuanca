@@ -1,14 +1,18 @@
-name: SonarCloud Analysis
+name: NegocioPDF Coverage Analysis
 on:
   push:
     branches:
       - main
+    paths:
+      - 'NegocioPDF/**'
   pull_request:
     types: [opened, synchronize, reopened]
+    paths:
+      - 'NegocioPDF/**'
 
 jobs:
   build:
-    name: Build and analyze
+    name: Analyze NegocioPDF Models
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,13 +30,13 @@ jobs:
         run: |
           dotnet tool install --global dotnet-sonarscanner
           
-      - name: Build and analyze
+      - name: Build and analyze NegocioPDF Models
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          dotnet sonarscanner begin /k:"pdftest_pdftest" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml" /d:sonar.sources="NegocioPDF/Models/Usuario.cs,NegocioPDF/Models/OperacionPDF.cs,NegocioPDF/Models/DetalleSuscripcion.cs" /d:sonar.exclusions="**/*" /d:sonar.coverage.exclusions="**/*" /d:sonar.cpd.exclusions="**/*"
-          dotnet build
-          dotnet test --no-build --collect:"XPlat Code Coverage;Format=opencover"
+          dotnet sonarscanner begin /k:"pdftest_pdftest" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml" /d:sonar.coverage.exclusions="**/Program.cs,**/Startup.cs,PROYECTOPDF/**/*,**/Controllers/**/*,**/Repositories/**/*" /d:sonar.sources="NegocioPDF/Models/Usuario.cs,NegocioPDF/Models/OperacionPDF.cs,NegocioPDF/Models/DetalleSuscripcion.cs"
+          dotnet build NegocioPDF/NegocioPDF.csproj
+          dotnet test NegocioPDF.Tests/NegocioPDF.Tests.csproj --no-build --collect:"XPlat Code Coverage;Format=opencover"
           dotnet sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
