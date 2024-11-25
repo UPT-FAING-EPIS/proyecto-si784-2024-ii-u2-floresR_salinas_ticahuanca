@@ -49,7 +49,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.sources="NegocioPDF.Tests" /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml" /d:sonar.coverage.exclusions="NegocioPDF/**,PROYECTOPDF/**" /d:sonar.test.inclusions="**/*.Tests/**" /d:sonar.verbose=true
-          dotnet build
-          dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=./coverage.opencover.xml
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.sources="NegocioPDF.Tests" /d:sonar.cs.opencover.reportsPaths="**/TestResults/**/coverage.cobertura.xml" /d:sonar.coverage.exclusions="**/bin/**/*,**/obj/**/*" /d:sonar.test.inclusions="**/*Tests.cs,**/*.feature,**/*.feature.cs" /d:sonar.projectBaseDir="." /d:sonar.projectKey="proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca"
+          dotnet build NegocioPDF.Tests/NegocioPDF.Tests.csproj
+          dotnet test NegocioPDF.Tests/NegocioPDF.Tests.csproj --collect:"XPlat Code Coverage" --results-directory ./TestResults
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
