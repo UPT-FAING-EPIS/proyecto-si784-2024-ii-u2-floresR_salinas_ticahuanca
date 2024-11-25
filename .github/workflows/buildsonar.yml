@@ -43,6 +43,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest2" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.tests="PROYECTOPDF_PDF/NEGOCIOPDF.TESTS" /d:sonar.sources="./PROYECTO_PDF"
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest2" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.tests="PROYECTO_PDF/NEGOCIOPDF.TESTS" /d:sonar.sources="./PROYECTO_PDF"
           dotnet build
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
