@@ -36,3 +36,16 @@ D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ti
 D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF\obj\Debug\net8.0\refint\NegocioPDF.dll
 D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF\obj\Debug\net8.0\NegocioPDF.pdb
 D:\Nueva carpeta (11)\Nueva carpeta\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\NegocioPDF\obj\Debug\net8.0\ref\NegocioPDF.dll
+C:\Nueva carpeta\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\PROYECTO_PDF\NegocioPDF\bin\Debug\net8.0\NegocioPDF.deps.json
+C:\Nueva carpeta\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\PROYECTO_PDF\NegocioPDF\bin\Debug\net8.0\NegocioPDF.dll
+C:\Nueva carpeta\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\PROYECTO_PDF\NegocioPDF\bin\Debug\net8.0\NegocioPDF.pdb
+C:\Nueva carpeta\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\PROYECTO_PDF\NegocioPDF\obj\Debug\net8.0\NegocioPDF.csproj.AssemblyReference.cache
+C:\Nueva carpeta\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\PROYECTO_PDF\NegocioPDF\obj\Debug\net8.0\NegocioPDF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Nueva carpeta\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\PROYECTO_PDF\NegocioPDF\obj\Debug\net8.0\NegocioPDF.AssemblyInfoInputs.cache
+C:\Nueva carpeta\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\PROYECTO_PDF\NegocioPDF\obj\Debug\net8.0\NegocioPDF.AssemblyInfo.cs
+C:\Nueva carpeta\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\PROYECTO_PDF\NegocioPDF\obj\Debug\net8.0\NegocioPDF.csproj.CoreCompileInputs.cache
+C:\Nueva carpeta\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\PROYECTO_PDF\NegocioPDF\obj\Debug\net8.0\NegocioPDF.sourcelink.json
+C:\Nueva carpeta\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\PROYECTO_PDF\NegocioPDF\obj\Debug\net8.0\NegocioPDF.dll
+C:\Nueva carpeta\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\PROYECTO_PDF\NegocioPDF\obj\Debug\net8.0\refint\NegocioPDF.dll
+C:\Nueva carpeta\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\PROYECTO_PDF\NegocioPDF\obj\Debug\net8.0\NegocioPDF.pdb
+C:\Nueva carpeta\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\PROYECTO_PDF\NegocioPDF\obj\Debug\net8.0\ref\NegocioPDF.dll

@@ -5795,32 +5795,40 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mario\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Nueva carpeta (11)\\Nueva carpeta\\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\\proyectoPDF\\PROYECTOPDF.csproj",
+      "projectUniqueName": "C:\\Nueva carpeta\\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\\PROYECTO_PDF\\PROYECTOPDF\\PROYECTOPDF.csproj",
       "projectName": "PROYECTOPDF",
-      "projectPath": "D:\\Nueva carpeta (11)\\Nueva carpeta\\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\\proyectoPDF\\PROYECTOPDF.csproj",
-      "packagesPath": "C:\\Users\\Mario\\.nuget\\packages\\",
-      "outputPath": "D:\\Nueva carpeta (11)\\Nueva carpeta\\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\\proyectoPDF\\obj\\",
+      "projectPath": "C:\\Nueva carpeta\\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\\PROYECTO_PDF\\PROYECTOPDF\\PROYECTOPDF.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "C:\\Nueva carpeta\\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\\PROYECTO_PDF\\PROYECTOPDF\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Mario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Nueva carpeta (11)\\Nueva carpeta\\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\\NegocioPDF\\NegocioPDF.csproj": {
-              "projectPath": "D:\\Nueva carpeta (11)\\Nueva carpeta\\proyecto-si784-2024-ii-u1-FloresR_Salinas_ticahuanca\\NegocioPDF\\NegocioPDF.csproj"
+            "C:\\Nueva carpeta\\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\\PROYECTO_PDF\\NegocioPDF\\NegocioPDF.csproj": {
+              "projectPath": "C:\\Nueva carpeta\\proyecto-si784-2024-ii-u2-floresR_salinas_ticahuanca\\PROYECTO_PDF\\NegocioPDF\\NegocioPDF.csproj"
             }
           }
         }
@@ -5833,8 +5841,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -5872,8 +5881,30 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"System.Text.Json\" 8.0.3 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-8g4q-xg66-9fp4",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"System.Text.Json\" 8.0.3 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
