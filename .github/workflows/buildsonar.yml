@@ -38,14 +38,15 @@ jobs:
        run: |
          New-Item -Path .\.sonar\scanner -ItemType Directory
          dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
-         
+         dotnet tool install --global dotnet-coverage
+
      - name: Build and analyze
        env:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
        shell: powershell
        run: |
-         .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest2" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.sources="./Proyecto_PDF/NegocioPDF,./Proyecto_PDF/PROYECTOPDF" /d:sonar.tests="./Proyecto_PDF/NegocioPDF.TESTS" /d:sonar.exclusions="**/*" /d:sonar.inclusions="**/NegocioPDF/**,**/PROYECTOPDF/**" /d:sonar.test.inclusions="**/NegocioPDF.TESTS/**" /d:sonar.cs.vscoveragexml.reportsPaths=**/TestResults/**/coverage.cobertura.xml
-         dotnet build proyecto_PDF/proyectoPDF.sln
-         dotnet test --collect:"XPlat Code Coverage"
+         .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest2" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
+         dotnet build ./Proyecto_PDF/PROYECTOPDF.sln
+         dotnet-coverage collect "dotnet test" -f xml -o "coverage.xml"
          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
