@@ -9,23 +9,20 @@ on:
 
 jobs:
   build:
-    name: Build and Analyze with Coverage
+    name: Build and analyze
     runs-on: windows-latest
 
     steps:
-      # Configurar el JDK
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: 17
           distribution: 'zulu' # Alternative distribution options are available.
-
-      # Descargar el código fuente
+          
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Shallow clones should be disabled for better relevancy of analysis
 
-      # Cache para paquetes de SonarQube Cloud
       - name: Cache SonarQube Cloud packages
         uses: actions/cache@v4
         with:
@@ -33,7 +30,6 @@ jobs:
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
 
-      # Cache para el escáner de SonarQube Cloud
       - name: Cache SonarQube Cloud scanner
         id: cache-sonar-scanner
         uses: actions/cache@v4
@@ -42,7 +38,6 @@ jobs:
           key: ${{ runner.os }}-sonar-scanner
           restore-keys: ${{ runner.os }}-sonar-scanner
 
-      # Instalar el escáner de SonarQube Cloud si no está en caché
       - name: Install SonarQube Cloud scanner
         if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
         shell: powershell
@@ -50,25 +45,12 @@ jobs:
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
 
-      # Generar cobertura de código y ejecutar análisis
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          # Iniciar SonarScanner con cobertura
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest2" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="proyecto_pdf/TestResults/coverage.opencover.xml"
-          
-          # Ejecutar pruebas y generar el informe de cobertura en el proyecto
-          dotnet test proyecto_pdf/negociopdf.sln --collect:"XPlat Code Coverage" --results-directory:proyecto_pdf/TestResults
-
-          # Convertir cobertura a OpenCover si es necesario (puedes omitir si usas XPlat Code Coverage)
-          dotnet tool install -g dotnet-reportgenerator-globaltool
-          reportgenerator "-reports:proyecto_pdf/TestResults/**/coverage.cobertura.xml" "-targetdir:proyecto_pdf/TestResults/coverage" "-reporttypes:opencover"
-
-          # Construir el proyecto
-          dotnet build proyecto_pdf/negociopdf.sln
-
-          # Finalizar análisis de SonarScanner
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest2" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="NegocioPDF.Tests/TestResults/coverage.cobertura.xml"
+          dotnet build
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
