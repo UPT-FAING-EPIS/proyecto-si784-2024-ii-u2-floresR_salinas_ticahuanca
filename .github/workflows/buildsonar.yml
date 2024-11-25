@@ -9,7 +9,6 @@ jobs:
  build:
    name: Build and analyze
    runs-on: windows-latest
-   
    steps:
      - uses: actions/setup-java@v4
        with:
@@ -33,7 +32,7 @@ jobs:
          key: ${{ runner.os }}-sonar-scanner
          restore-keys: ${{ runner.os }}-sonar-scanner
          
-     - if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
+     - name: Install tools
        shell: powershell
        run: |
          New-Item -Path .\.sonar\scanner -ItemType Directory
