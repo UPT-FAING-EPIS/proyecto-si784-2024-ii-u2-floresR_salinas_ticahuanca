@@ -58,18 +58,17 @@ jobs:
         shell: powershell
         run: |
           # Iniciar SonarScanner con cobertura
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest2" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="TestResults/coverage.opencover.xml"
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest2" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="proyecto_pdf/TestResults/coverage.opencover.xml"
           
-          # Ejecutar pruebas y generar el informe de cobertura
-          dotnet test --collect:"XPlat Code Coverage" --results-directory:TestResults
+          # Ejecutar pruebas y generar el informe de cobertura en el proyecto
+          dotnet test proyecto_pdf/negociopdf.sln --collect:"XPlat Code Coverage" --results-directory:proyecto_pdf/TestResults
 
           # Convertir cobertura a OpenCover si es necesario (puedes omitir si usas XPlat Code Coverage)
           dotnet tool install -g dotnet-reportgenerator-globaltool
-          reportgenerator "-reports:TestResults/**/coverage.cobertura.xml" "-targetdir:TestResults/coverage" "-reporttypes:opencover"
+          reportgenerator "-reports:proyecto_pdf/TestResults/**/coverage.cobertura.xml" "-targetdir:proyecto_pdf/TestResults/coverage" "-reporttypes:opencover"
 
           # Construir el proyecto
-          dotnet build
+          dotnet build proyecto_pdf/negociopdf.sln
 
           # Finalizar análisis de SonarScanner
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
-
