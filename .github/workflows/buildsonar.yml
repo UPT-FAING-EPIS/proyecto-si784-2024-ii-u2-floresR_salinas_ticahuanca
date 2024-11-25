@@ -46,6 +46,6 @@ jobs:
        shell: powershell
        run: |
          .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest2" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.sources="./Proyecto_PDF/NegocioPDF,./Proyecto_PDF/PROYECTOPDF" /d:sonar.tests="./Proyecto_PDF/NegocioPDF.TESTS" /d:sonar.exclusions="**/bin/**,**/obj/**,**/*.js,**/*.css" /d:sonar.test.inclusions="**/*Tests.cs,**/*Test.cs,**/*.feature" /d:sonar.cs.vscoveragexml.reportsPaths=**/TestResults/**/coverage.cobertura.xml
-         dotnet build
+         dotnet build proyecto_PDF/proyectoPDF.sln
          dotnet test --collect:"XPlat Code Coverage"
          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
