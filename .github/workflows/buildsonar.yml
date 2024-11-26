@@ -1,4 +1,4 @@
-name: SonarCloud Analysis
+ame: SonarCloud Analysis
 on:
   push:
     branches:
@@ -38,7 +38,10 @@ jobs:
             /d:sonar.token="${{ secrets.SONAR_TOKEN }}" `
             /d:sonar.host.url="https://sonarcloud.io" `
             /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml" `
-            /d:sonar.coverage.exclusions="**/*Tests.cs,**/obj/**/*,**/bin/**/*"
+            /d:sonar.cs.vstest.reportsPaths="**/TestResults/*.trx" `
+            /d:sonar.coverage.exclusions="**/*.Tests/**,**/obj/**/*,**/bin/**/*" `
+            /d:sonar.test.inclusions="**/*.Tests/**" `
+            /d:sonar.verbose=true
 
       - name: Build solution
         run: dotnet build proyecto_PDF/proyectoPDF.sln --configuration Release
@@ -50,7 +53,14 @@ jobs:
             --no-build `
             --collect:"XPlat Code Coverage;Format=opencover" `
             --results-directory TestResults `
+            --logger trx `
             --verbosity normal
+          
+      - name: Debug coverage files
+        shell: powershell
+        run: |
+          Write-Host "Listing coverage files:"
+          Get-ChildItem -Path "TestResults" -Recurse -Filter "*.xml"
           
       - name: End SonarCloud analysis
         env:
