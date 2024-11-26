@@ -47,10 +47,10 @@ jobs:
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest2" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="TestResults/**/*.xml" /d:sonar.coverage.exclusions="**/bin/**/*, **/obj/**/*"
           
           # Construir la solución antes de ejecutar las pruebas
-          dotnet build proyectoPDF.sln --configuration Release
+          dotnet build proyecto_PDF/proyectoPDF.sln --configuration Release
           
           # Ejecutar pruebas y generar la cobertura
-          dotnet test proyectoPDF.sln --collect:"XPlat Code Coverage" --results-directory=TestResults
+          dotnet test proyecto_PDF/proyectoPDF.sln --collect:"XPlat Code Coverage" --results-directory=TestResults
       
           # Finalizar análisis de SonarQube
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
