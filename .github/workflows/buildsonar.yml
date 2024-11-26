@@ -39,15 +39,18 @@ jobs:
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
       - name: Build and analyze
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
           # Iniciar análisis de SonarQube con la solución completa
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest2" /o:"pdftest" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="TestResults/**/*.xml" /d:sonar.coverage.exclusions="**/bin/**/*, **/obj/**/*"
           
+          # Construir la solución antes de ejecutar las pruebas
+          dotnet build proyectoPDF.sln --configuration Release
+          
           # Ejecutar pruebas y generar la cobertura
           dotnet test proyectoPDF.sln --collect:"XPlat Code Coverage" --results-directory=TestResults
-
+      
           # Finalizar análisis de SonarQube
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
