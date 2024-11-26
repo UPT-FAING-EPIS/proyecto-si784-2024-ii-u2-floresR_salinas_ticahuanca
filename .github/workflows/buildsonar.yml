@@ -56,7 +56,7 @@ jobs:
           dotnet build proyecto_PDF/proyectoPDF.sln --configuration Release
           
           # Ejecutar pruebas y generar la cobertura
-          dotnet test proyecto_PDF/proyectoPDF.sln --collect:"XPlat Code Coverage" --results-directory=TestResults
+          dotnet test proyecto_PDF/proyectoPDF.sln --collect:"XPlat Code Coverage" --results-directory=TestResults --coverlet-output-format=jacoco
       
           # Finalizar análisis de SonarQube
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
