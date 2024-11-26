@@ -42,7 +42,7 @@ jobs:
         run: |
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
-
+          
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -57,6 +57,7 @@ jobs:
           
           # Ejecutar pruebas y generar la cobertura
           dotnet test proyecto_PDF/proyectoPDF.sln --collect:"XPlat Code Coverage" --results-directory=TestResults --coverlet-output-format=jacoco
-      
+          
           # Finalizar análisis de SonarQube
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
+
