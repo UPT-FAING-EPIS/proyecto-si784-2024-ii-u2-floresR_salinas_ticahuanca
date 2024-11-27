@@ -42,7 +42,7 @@ jobs:
             /d:sonar.coverage.exclusions="**/*.Tests/**,**/obj/**/*,**/bin/**/*" `
             /d:sonar.test.inclusions="**/*.Tests/**" `
             /d:sonar.verbose=true
-
+          
       - name: Build solution
         run: dotnet build proyecto_PDF/proyectoPDF.sln --configuration Release
           
