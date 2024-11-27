@@ -28,6 +28,13 @@ jobs:
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
           
+      - name: Install Playwright browsers
+        run: |
+          # Instalar Playwright y los navegadores necesarios
+          dotnet add package Microsoft.Playwright
+          dotnet restore
+          pwsh .\bin\Debug\net8\playwright.ps1 install
+          
       - name: Begin SonarCloud analysis
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -73,5 +80,6 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
+
 
 
