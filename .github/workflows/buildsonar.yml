@@ -34,15 +34,21 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest2" /o:"pdftest" `
-            /d:sonar.token="${{ secrets.SONAR_TOKEN }}" `
-            /d:sonar.host.url="https://sonarcloud.io" `
-            /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml" `
-            /d:sonar.cs.vstest.reportsPaths="**/TestResults/*.trx" `
-            /d:sonar.coverage.exclusions="**/*.Tests/**,**/obj/**/*,**/bin/**/*" `
-            /d:sonar.test.inclusions="**/*.Tests/**" `
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"pdftest_pdftest2" /o:"pdftest" ` 
+            /d:sonar.token="${{ secrets.SONAR_TOKEN }}" ` 
+            /d:sonar.host.url="https://sonarcloud.io" ` 
+            /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml" ` 
+            /d:sonar.cs.vstest.reportsPaths="**/TestResults/*.trx" ` 
+            /d:sonar.coverage.exclusions="**/*.Tests/**,**/obj/**/*,**/bin/**/*" ` 
+            /d:sonar.test.inclusions="**/*.Tests/**" ` 
             /d:sonar.verbose=true
-          
+
+      # Step to install Playwright browsers
+      - name: Install Playwright Browsers
+        run: |
+          dotnet tool install --global Microsoft.Playwright.CLI
+          playwright install
+
       - name: Build solution
         run: dotnet build proyecto_PDF/proyectoPDF.sln --configuration Release
           
@@ -69,3 +75,4 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
+
