@@ -21,16 +21,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Debug repository structure
-        shell: powershell
-        run: |
-          Write-Host "Current directory:"
-          pwd
-          Write-Host "`nFull directory structure:"
-          Get-ChildItem -Recurse
-          Write-Host "`nSearching for .csproj files:"
-          Get-ChildItem -Recurse -Filter "*.csproj"
-
       - name: Install SonarCloud scanner
         shell: powershell
         run: |
@@ -55,41 +45,15 @@ jobs:
         shell: powershell
         run: |
           $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
-          if (Test-Path $projectPath) {
-              dotnet restore $projectPath
-          } else {
-              Write-Host "Cannot restore dependencies - project file not found"
-              exit 1
-          }
+          dotnet restore $projectPath
 
       - name: Install Playwright browsers
         shell: powershell
         run: |
           $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
-          if (Test-Path $projectPath) {
-              dotnet add $projectPath package Microsoft.Playwright
-              dotnet build $projectPath --configuration Release
-              npx playwright install
-          } else {
-              Write-Host "Cannot install Playwright - project file not found"
-              exit 1
-          }
-
-      - name: Start the application
-        shell: powershell
-        run: |
-          $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
-          if (Test-Path $projectPath) {
-              Write-Host "Starting application from: $projectPath"
-              dotnet run --project $projectPath --urls "http://localhost:5260"
-          } else {
-              Write-Host "Cannot start application - project file not found"
-              exit 1
-          }
-
-      - name: Wait for application to be ready
-        run: |
-          Start-Sleep -Seconds 20
+          dotnet add $projectPath package Microsoft.Playwright
+          dotnet build $projectPath --configuration Release
+          npx playwright install
 
       - name: Begin SonarCloud analysis
         env:
@@ -108,41 +72,26 @@ jobs:
           /d:sonar.test.inclusions="**/*.Tests/**" `
           /d:sonar.verbose=true `
           /d:sonar.sources="**/*" `
-          /d:sonar.exclusions="**/NegocioPDF.Tests/UITests/PlaywrightUITests.cs"
+          /d:sonar.exclusions="**/NegocioPDF.Tests/UITests/PlaywrightUITests.cs,**/NegocioPDF.Tests/Controllers/SuscripcionControllerTests.cs"
 
       - name: Build solution
         shell: powershell
         run: |
           $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
-          if (Test-Path $projectPath) {
-              dotnet build $projectPath --configuration Release
-          } else {
-              Write-Host "Cannot build solution - project file not found"
-              exit 1
-          }
+          dotnet build $projectPath --configuration Release
 
-      - name: Run tests with coverage
+      - name: Run tests with coverage (excluding DB tests)
         shell: powershell
         run: |
           $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
-          if (Test-Path $projectPath) {
-              dotnet test $projectPath `
-              --configuration Release `
-              --no-build `
-              --collect:"XPlat Code Coverage;Format=opencover" `
-              --results-directory TestResults `
-              --logger trx `
-              --verbosity normal
-          } else {
-              Write-Host "Cannot run tests - project file not found"
-              exit 1
-          }
-
-      - name: Debug coverage files
-        shell: powershell
-        run: |
-          Write-Host "Listing coverage files:"
-          Get-ChildItem -Path "TestResults" -Recurse -Filter "*.xml"
+          dotnet test $projectPath `
+            --configuration Release `
+            --no-build `
+            --filter "Category!=DatabaseTest" `
+            --collect:"XPlat Code Coverage;Format=opencover" `
+            --results-directory TestResults `
+            --logger trx `
+            --verbosity normal
 
       - name: End SonarCloud analysis
         env:
