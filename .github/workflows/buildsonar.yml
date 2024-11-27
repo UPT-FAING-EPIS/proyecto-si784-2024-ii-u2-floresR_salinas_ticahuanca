@@ -47,6 +47,10 @@ jobs:
         shell: powershell
         run: |
           dotnet build proyecto_PDF/NegocioPDF/NegocioPDF.csproj --configuration Release
+      - name: Build NegocioPDF.Tests project
+        shell: powershell
+        run: |
+          dotnet build proyecto_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj --configuration Release
 
       - name: Run tests (if required)
         shell: powershell
