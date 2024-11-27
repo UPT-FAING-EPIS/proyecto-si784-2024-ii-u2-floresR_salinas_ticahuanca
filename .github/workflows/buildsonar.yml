@@ -40,7 +40,7 @@ jobs:
       # Paso para iniciar la aplicación en un puerto específico (en segundo plano)
       - name: Start the application
         run: |
-          start dotnet run --project proyecto_PDF/proyectoPDF.csproj --urls "http://localhost:5260"
+          dotnet run --project proyecto_PDF/proyectoPDF.csproj --urls "http://localhost:5260"
         # Espera un poco para que la aplicación inicie correctamente
       - name: Wait for application to be ready
         run: |
