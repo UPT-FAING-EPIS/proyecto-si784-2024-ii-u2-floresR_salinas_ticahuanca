@@ -53,9 +53,6 @@ jobs:
         run: |
           dotnet build proyecto_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj --configuration Release
 
-      - name: Install Playwright browsers
-        run: npx playwright install
-
       - name: Run tests (excluding Playwright UI Tests)
         shell: powershell
         run: |
