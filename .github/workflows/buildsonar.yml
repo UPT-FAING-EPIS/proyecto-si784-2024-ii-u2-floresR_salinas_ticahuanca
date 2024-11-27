@@ -27,34 +27,6 @@ jobs:
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
 
-      - name: Verify project path
-        shell: powershell
-        run: |
-          $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
-          Write-Host "Checking project path: $projectPath"
-          if (Test-Path $projectPath) {
-              Write-Host "Project file found at: $projectPath"
-          } else {
-              Write-Host "Project file NOT found at: $projectPath"
-              Write-Host "Available .csproj files:"
-              Get-ChildItem -Recurse -Filter "*.csproj"
-              exit 1
-          }
-
-      - name: Restore dependencies
-        shell: powershell
-        run: |
-          $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
-          dotnet restore $projectPath
-
-      - name: Install Playwright browsers
-        shell: powershell
-        run: |
-          $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
-          dotnet add $projectPath package Microsoft.Playwright
-          dotnet build $projectPath --configuration Release
-          npx playwright install
-
       - name: Begin SonarCloud analysis
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -70,24 +42,22 @@ jobs:
           /d:sonar.cs.vstest.reportsPaths="**/TestResults/*.trx" `
           /d:sonar.coverage.exclusions="**/*.Tests/**,**/obj/**/*,**/bin/**/*" `
           /d:sonar.test.inclusions="**/*.Tests/**" `
-          /d:sonar.verbose=true `
-          /d:sonar.sources="**/*" `
-          /d:sonar.exclusions="**/NegocioPDF.Tests/UITests/PlaywrightUITests.cs,**/NegocioPDF.Tests/Controllers/SuscripcionControllerTests.cs"
+          /d:sonar.sources="proyecto_PDF/NegocioPDF/**/*.cs" `
+          /d:sonar.exclusions="**/*.js,**/*.css,**/*.html,**/*.sql,**/wwwroot/**/*,**/Migrations/**/*" `
+          /d:sonar.cpd.exclusions="**/Migrations/**/*" `
+          /d:sonar.verbose=true
 
       - name: Build solution
         shell: powershell
         run: |
-          $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
-          dotnet build $projectPath --configuration Release
+          dotnet build --configuration Release
 
-      - name: Run tests with coverage (excluding DB tests)
+      - name: Run tests
         shell: powershell
         run: |
-          $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
-          dotnet test $projectPath `
+          dotnet test `
             --configuration Release `
             --no-build `
-            --filter "Category!=DatabaseTest" `
             --collect:"XPlat Code Coverage;Format=opencover" `
             --results-directory TestResults `
             --logger trx `
