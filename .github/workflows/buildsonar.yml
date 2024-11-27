@@ -40,7 +40,7 @@ jobs:
       - name: Verify project path
         shell: powershell
         run: |
-          $projectPath = "proyecto_pdf/proyectoPDF/proyecto.csproj"
+          $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
           Write-Host "Checking project path: $projectPath"
           if (Test-Path $projectPath) {
               Write-Host "Project file found at: $projectPath"
@@ -54,7 +54,7 @@ jobs:
       - name: Restore dependencies
         shell: powershell
         run: |
-          $projectPath = "proyecto_pdf/proyectoPDF/proyecto.csproj"
+          $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
           if (Test-Path $projectPath) {
               dotnet restore $projectPath
           } else {
@@ -65,7 +65,7 @@ jobs:
       - name: Install Playwright browsers
         shell: powershell
         run: |
-          $projectPath = "proyecto_pdf/proyectoPDF/proyecto.csproj"
+          $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
           if (Test-Path $projectPath) {
               dotnet add $projectPath package Microsoft.Playwright
               dotnet build $projectPath --configuration Release
@@ -78,7 +78,7 @@ jobs:
       - name: Start the application
         shell: powershell
         run: |
-          $projectPath = "proyecto_pdf/proyectoPDF/proyecto.csproj"
+          $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
           if (Test-Path $projectPath) {
               Write-Host "Starting application from: $projectPath"
               dotnet run --project $projectPath --urls "http://localhost:5260"
@@ -113,7 +113,7 @@ jobs:
       - name: Build solution
         shell: powershell
         run: |
-          $projectPath = "proyecto_pdf/proyectoPDF/proyecto.csproj"
+          $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
           if (Test-Path $projectPath) {
               dotnet build $projectPath --configuration Release
           } else {
@@ -124,7 +124,7 @@ jobs:
       - name: Run tests with coverage
         shell: powershell
         run: |
-          $projectPath = "proyecto_pdf/proyectoPDF/proyecto.csproj"
+          $projectPath = "proyecto_PDF/proyectoPDF/proyectoPDF.csproj"
           if (Test-Path $projectPath) {
               dotnet test $projectPath `
               --configuration Release `
