@@ -10,31 +10,34 @@ jobs:
   sonarcloud:
     name: SonarCloud Analysis
     runs-on: windows-latest
-    
+
     steps:
       - name: Set up .NET SDK 8.0
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.0.x'
-          
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          
+
       - name: Install SonarCloud scanner
         shell: powershell
         run: |
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
-          
+
+      - name: Restore dependencies
+        run: dotnet restore proyecto_PDF/proyectoPDF.sln
+
       - name: Install Playwright browsers
         run: |
-          # Instalar Playwright y los navegadores necesarios
-          dotnet add package Microsoft.Playwright
-          dotnet restore
-          pwsh .\bin\Debug\net8\playwright.ps1 install
-          
+          # Instala Playwright y los navegadores necesarios
+          dotnet add proyecto_PDF/proyectoPDF.csproj package Microsoft.Playwright
+          dotnet build proyecto_PDF/proyectoPDF.sln --configuration Release
+          npx playwright install
+
       - name: Begin SonarCloud analysis
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -53,10 +56,10 @@ jobs:
             /d:sonar.verbose=true `
             /d:sonar.sources="**/*" `
             /d:sonar.exclusions="**/NegocioPDF.Tests/UITests/PlaywrightUITests.cs"
-          
+
       - name: Build solution
         run: dotnet build proyecto_PDF/proyectoPDF.sln --configuration Release
-          
+
       - name: Run tests with coverage
         run: |
           dotnet test proyecto_PDF/proyectoPDF.sln `
@@ -66,13 +69,13 @@ jobs:
             --results-directory TestResults `
             --logger trx `
             --verbosity normal
-          
+
       - name: Debug coverage files
         shell: powershell
         run: |
           Write-Host "Listing coverage files:"
           Get-ChildItem -Path "TestResults" -Recurse -Filter "*.xml"
-          
+
       - name: End SonarCloud analysis
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -80,6 +83,3 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
-
-
-
