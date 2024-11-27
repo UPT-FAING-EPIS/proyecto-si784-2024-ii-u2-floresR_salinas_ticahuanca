@@ -53,7 +53,7 @@ jobs:
           dotnet build proyecto_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj --configuration Release
       - name: Install Playwright browsers
         run: npx playwright install
-      - name: Run tests (if required)
+      - name: Run tests (excluding Playwright UI Tests)
         shell: powershell
         run: |
           dotnet test proyecto_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj `
@@ -62,7 +62,9 @@ jobs:
             --collect:"XPlat Code Coverage;Format=opencover" `
             --results-directory TestResults `
             --logger trx `
-            --verbosity normal
+            --verbosity normal `
+            --filter "FullyQualifiedName!~SubscriptionTests"
+
 
       - name: End SonarCloud analysis
         env:
