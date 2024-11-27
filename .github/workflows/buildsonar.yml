@@ -10,7 +10,6 @@ jobs:
   sonarcloud:
     name: SonarCloud Analysis
     runs-on: windows-latest
-
     steps:
       - name: Set up .NET SDK 8.0
         uses: actions/setup-dotnet@v3
@@ -22,30 +21,74 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Debug repository structure
+        shell: powershell
+        run: |
+          Write-Host "Current directory:"
+          pwd
+          Write-Host "`nFull directory structure:"
+          Get-ChildItem -Recurse
+          Write-Host "`nSearching for .csproj files:"
+          Get-ChildItem -Recurse -Filter "*.csproj"
+
       - name: Install SonarCloud scanner
         shell: powershell
         run: |
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
 
+      - name: Verify project path
+        shell: powershell
+        run: |
+          $projectPath = "proyecto_pdf/proyectoPDF/proyecto.csproj"
+          Write-Host "Checking project path: $projectPath"
+          if (Test-Path $projectPath) {
+              Write-Host "Project file found at: $projectPath"
+          } else {
+              Write-Host "Project file NOT found at: $projectPath"
+              Write-Host "Available .csproj files:"
+              Get-ChildItem -Recurse -Filter "*.csproj"
+              exit 1
+          }
+
       - name: Restore dependencies
-        run: dotnet restore proyecto_PDF/proyectoPDF.sln
+        shell: powershell
+        run: |
+          $projectPath = "proyecto_pdf/proyectoPDF/proyecto.csproj"
+          if (Test-Path $projectPath) {
+              dotnet restore $projectPath
+          } else {
+              Write-Host "Cannot restore dependencies - project file not found"
+              exit 1
+          }
 
       - name: Install Playwright browsers
+        shell: powershell
         run: |
-          dotnet add proyecto_PDF/proyectoPDF.csproj package Microsoft.Playwright
-          dotnet build proyecto_PDF/proyectoPDF.sln --configuration Release
-          npx playwright install
+          $projectPath = "proyecto_pdf/proyectoPDF/proyecto.csproj"
+          if (Test-Path $projectPath) {
+              dotnet add $projectPath package Microsoft.Playwright
+              dotnet build $projectPath --configuration Release
+              npx playwright install
+          } else {
+              Write-Host "Cannot install Playwright - project file not found"
+              exit 1
+          }
 
-      # Paso para iniciar la aplicación en un puerto específico (en segundo plano)
       - name: Start the application
+        shell: powershell
         run: |
-          dotnet run --project proyecto_pdf/proyectoPDF/proyecto.csproj --urls "http://localhost:5260"
-        # Espera un poco para que la aplicación inicie correctamente
+          $projectPath = "proyecto_pdf/proyectoPDF/proyecto.csproj"
+          if (Test-Path $projectPath) {
+              Write-Host "Starting application from: $projectPath"
+              dotnet run --project $projectPath --urls "http://localhost:5260"
+          } else {
+              Write-Host "Cannot start application - project file not found"
+              exit 1
+          }
+
       - name: Wait for application to be ready
         run: |
-          # Esto es importante para dar tiempo a que la aplicación se inicie antes de las pruebas.
-          # Espera unos segundos (ajusta el tiempo si es necesario).
           Start-Sleep -Seconds 20
 
       - name: Begin SonarCloud analysis
@@ -55,30 +98,45 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin `
-            /k:"pdftest_pdftest2" `
-            /o:"pdftest" `
-            /d:sonar.token="${{ secrets.SONAR_TOKEN }}" `
-            /d:sonar.host.url="https://sonarcloud.io" `
-            /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml" `
-            /d:sonar.cs.vstest.reportsPaths="**/TestResults/*.trx" `
-            /d:sonar.coverage.exclusions="**/*.Tests/**,**/obj/**/*,**/bin/**/*" `
-            /d:sonar.test.inclusions="**/*.Tests/**" `
-            /d:sonar.verbose=true `
-            /d:sonar.sources="**/*" `
-            /d:sonar.exclusions="**/NegocioPDF.Tests/UITests/PlaywrightUITests.cs"
+          /k:"pdftest_pdftest2" `
+          /o:"pdftest" `
+          /d:sonar.token="${{ secrets.SONAR_TOKEN }}" `
+          /d:sonar.host.url="https://sonarcloud.io" `
+          /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml" `
+          /d:sonar.cs.vstest.reportsPaths="**/TestResults/*.trx" `
+          /d:sonar.coverage.exclusions="**/*.Tests/**,**/obj/**/*,**/bin/**/*" `
+          /d:sonar.test.inclusions="**/*.Tests/**" `
+          /d:sonar.verbose=true `
+          /d:sonar.sources="**/*" `
+          /d:sonar.exclusions="**/NegocioPDF.Tests/UITests/PlaywrightUITests.cs"
 
       - name: Build solution
-        run: dotnet build proyecto_PDF/proyectoPDF.sln --configuration Release
+        shell: powershell
+        run: |
+          $projectPath = "proyecto_pdf/proyectoPDF/proyecto.csproj"
+          if (Test-Path $projectPath) {
+              dotnet build $projectPath --configuration Release
+          } else {
+              Write-Host "Cannot build solution - project file not found"
+              exit 1
+          }
 
       - name: Run tests with coverage
+        shell: powershell
         run: |
-          dotnet test proyecto_PDF/proyectoPDF.sln `
-            --configuration Release `
-            --no-build `
-            --collect:"XPlat Code Coverage;Format=opencover" `
-            --results-directory TestResults `
-            --logger trx `
-            --verbosity normal
+          $projectPath = "proyecto_pdf/proyectoPDF/proyecto.csproj"
+          if (Test-Path $projectPath) {
+              dotnet test $projectPath `
+              --configuration Release `
+              --no-build `
+              --collect:"XPlat Code Coverage;Format=opencover" `
+              --results-directory TestResults `
+              --logger trx `
+              --verbosity normal
+          } else {
+              Write-Host "Cannot run tests - project file not found"
+              exit 1
+          }
 
       - name: Debug coverage files
         shell: powershell
@@ -93,4 +151,3 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
-
