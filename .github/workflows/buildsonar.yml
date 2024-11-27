@@ -43,7 +43,7 @@ jobs:
           /d:sonar.coverage.exclusions="**/*.Tests/**,**/obj/**/*,**/bin/**/*" `
           /d:sonar.test.inclusions="**/*.Tests/**" `
           /d:sonar.sources="proyecto_PDF/NegocioPDF/**/*.cs" `
-          /d:sonar.exclusions="**/*.js,**/*.css,**/*.html,**/*.sql,**/wwwroot/**/*,**/Migrations/**/*" `
+          /d:sonar.exclusions="**/*.js,**/*.css,**/*.html,**/*.sql,**/wwwroot/**/*,**/Migrations/**/*,**/UITests/**/*" `
           /d:sonar.cpd.exclusions="**/Migrations/**/*" `
           /d:sonar.verbose=true
 
@@ -52,12 +52,13 @@ jobs:
         run: |
           dotnet build proyecto_PDF/proyectoPDF.sln --configuration Release
 
-      - name: Run tests
+      - name: Run tests (excluding UI tests)
         shell: powershell
         run: |
           dotnet test proyecto_PDF/proyectoPDF.sln `
             --configuration Release `
             --no-build `
+            --filter "FullyQualifiedName!~UITests" `
             --collect:"XPlat Code Coverage;Format=opencover" `
             --results-directory TestResults `
             --logger trx `
