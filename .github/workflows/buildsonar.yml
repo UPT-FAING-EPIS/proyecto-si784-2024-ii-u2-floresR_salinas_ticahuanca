@@ -21,6 +21,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      # Paso para limpiar carpetas de Playwright
+      - name: Clean Playwright folders
+        shell: powershell
+        run: |
+          Get-ChildItem -Path . -Directory -Recurse -Filter ".playwright" | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
+
       - name: Install SonarCloud scanner
         shell: powershell
         run: |
@@ -42,15 +48,18 @@ jobs:
             /d:sonar.sources="proyecto_PDF/NegocioPDF/**/*.cs" `
             /d:sonar.verbose=true
 
+      # Build modificado para evitar Playwright
       - name: Build NegocioPDF project
         shell: powershell
         run: |
-          dotnet build proyecto_PDF/NegocioPDF/NegocioPDF.csproj --configuration Release
+          dotnet restore proyecto_PDF/NegocioPDF/NegocioPDF.csproj --ignore-failed-sources
+          dotnet build proyecto_PDF/NegocioPDF/NegocioPDF.csproj --configuration Release --no-restore
 
       - name: Build NegocioPDF.Tests project
         shell: powershell
         run: |
-          dotnet build proyecto_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj --configuration Release
+          dotnet restore proyecto_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj /p:DisablePlaywright=true
+          dotnet build proyecto_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj --configuration Release --no-restore
 
       - name: Run tests (excluding Playwright UI Tests)
         shell: powershell
@@ -63,6 +72,12 @@ jobs:
             --logger trx `
             --verbosity normal `
             --filter "FullyQualifiedName!~SubscriptionTests"
+
+      # Limpieza adicional después de los tests por si acaso
+      - name: Clean Playwright folders after tests
+        shell: powershell
+        run: |
+          Get-ChildItem -Path . -Directory -Recurse -Filter ".playwright" | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
 
       - name: End SonarCloud analysis
         env:
