@@ -1,7 +1,7 @@
 name: Security Analysis
 
 env:
-  DOTNET_VERSION: '8.x' # La versión de .NET
+  DOTNET_VERSION: '8.x'
 
 on: push
 
@@ -20,13 +20,7 @@ jobs:
         run: docker pull semgrep/semgrep
 
       - name: Run Semgrep
-        run: |
-          docker run --rm -v $(pwd):/src semgrep/semgrep semgrep scan \
-          --config="p/default" \
-          --json \
-          --output semgrep.json \
-          --metrics=off \
-          ./Proyecto_PDF
+        run: docker run --rm -v "${PWD}:/src" semgrep/semgrep --metrics=off --config="p/default" --json --output=semgrep.json /src/Proyecto_PDF
 
       - name: Install prospector-html
         run: python -m pip install prospector2html
@@ -63,4 +57,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: public # Publicar la carpeta 'public' en GitHub Pages
+          publish_dir: public
