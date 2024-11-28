@@ -24,11 +24,6 @@ jobs:
         npm install -D @playwright/test
         npx playwright install --with-deps chromium
 
-    - name: Create Directories
-      run: |
-        mkdir -p PROYECTO_PDF/NegocioPDF.Tests/videos
-        mkdir -p PROYECTO_PDF/NegocioPDF.Tests/screenshots
-
     - name: Restore .NET dependencies
       run: |
         dotnet restore "PROYECTO_PDF/PROYECTOPDF/PROYECTOPDF.csproj"
@@ -49,41 +44,30 @@ jobs:
 
     - name: Run UI Tests with Xvfb
       run: |
-        xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" dotnet test "PROYECTO_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj" --filter "FullyQualifiedName~UITests"
+        cd PROYECTO_PDF/NegocioPDF.Tests
+        xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" dotnet test --filter "FullyQualifiedName~UITests"
 
-    - name: List Generated Files
+    - name: Debug - List Files
       if: always()
       run: |
-        echo "Contents of test directories:"
-        ls -R PROYECTO_PDF/NegocioPDF.Tests/
+        echo "Current directory:"
+        pwd
+        echo "Content of bin/Debug/net8.0/videos:"
+        ls -la PROYECTO_PDF/NegocioPDF.Tests/bin/Debug/net8.0/videos/
+        echo "All test files:"
+        find PROYECTO_PDF/NegocioPDF.Tests/bin/Debug/net8.0 -type f
 
-    - name: Upload Screenshots
-      if: always()
-      uses: actions/upload-artifact@v3
-      with:
-        name: screenshots
-        path: |
-          PROYECTO_PDF/NegocioPDF.Tests/*.png
-        retention-days: 14
-
-    - name: Upload Videos
-      if: always()
-      uses: actions/upload-artifact@v3
-      with:
-        name: videos
-        path: |
-          PROYECTO_PDF/NegocioPDF.Tests/videos/
-        retention-days: 14
-
-    - name: Upload Test Results
+    - name: Upload Test Artifacts
       if: always()
       uses: actions/upload-artifact@v3
       with:
         name: test-results
         path: |
+          PROYECTO_PDF/NegocioPDF.Tests/bin/Debug/net8.0/videos/
+          PROYECTO_PDF/NegocioPDF.Tests/bin/Debug/net8.0/*.png
           PROYECTO_PDF/NegocioPDF.Tests/TestResults/
         retention-days: 14
 
     - name: Stop Application
       if: always()
-      run: killall dotnet
+      run: killall dotnet || true
