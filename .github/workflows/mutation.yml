@@ -42,6 +42,11 @@ jobs:
         cd PROYECTO_PDF/NegocioPDF.Tests
         dotnet stryker
         
+    - name: Debug - List StrykerOutput contents
+      run: |
+        echo "Listing StrykerOutput directory contents:"
+        ls -R PROYECTO_PDF/NegocioPDF.Tests/StrykerOutput/
+        
     - name: Upload mutation report artifact
       uses: actions/upload-artifact@v3
       with:
@@ -63,22 +68,17 @@ jobs:
         name: mutation-report
         path: public
 
-    - name: Setup Pages
-      uses: actions/configure-pages@v4
-
-    - name: Upload Pages artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: public
-
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
-
-    - name: Check mutation score
+    - name: Debug - List downloaded contents
       run: |
-        if [ -f "public/*/reports/mutation-report.json" ]; then
-          MUTATION_SCORE=$(jq '.mutationScore' public/*/reports/mutation-report.json)
+        echo "Listing public directory contents:"
+        ls -R public/
+        
+    - name: Find and check mutation report
+      run: |
+        REPORT_PATH=$(find public -name "mutation-report.json" -type f)
+        if [ -n "$REPORT_PATH" ]; then
+          echo "Found report at: $REPORT_PATH"
+          MUTATION_SCORE=$(jq '.mutationScore' "$REPORT_PATH")
           echo "Current mutation score: $MUTATION_SCORE%"
           
           MINIMUM_SCORE=80
@@ -91,6 +91,19 @@ jobs:
             echo "✅ Success: Mutation score ($MUTATION_SCORE%) meets the requirement"
           fi
         else
-          echo "❌ Error: Mutation report not found"
+          echo "❌ Error: Mutation report not found in downloaded artifacts"
+          find public -type f
           exit 1
         fi
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: public
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
