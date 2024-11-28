@@ -19,13 +19,17 @@ jobs:
         dotnet-version: 8.0.x
         
     - name: Restore dependencies
-      run: dotnet restore
+      run: |
+        dotnet restore PROYECTO_PDF/NEGOCIOPDF.csproj
+        dotnet restore NEGOCIOPDF.Tests/NEGOCIOPDF.Tests.csproj
       
     - name: Build
-      run: dotnet build --no-restore
+      run: |
+        dotnet build PROYECTO_PDF/NEGOCIOPDF.csproj --no-restore
+        dotnet build NEGOCIOPDF.Tests/NEGOCIOPDF.Tests.csproj --no-restore
       
     - name: Test with coverage
-      run: dotnet test NEGOCIOPDF.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage/
+      run: dotnet test NEGOCIOPDF.Tests/NEGOCIOPDF.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage/
       
     - name: Generate coverage report
       uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
