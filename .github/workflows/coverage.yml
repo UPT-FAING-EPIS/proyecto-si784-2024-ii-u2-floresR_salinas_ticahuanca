@@ -29,7 +29,12 @@ jobs:
         
     - name: Install ReportGenerator tool
       run: dotnet tool install -g dotnet-reportgenerator-globaltool
-        
+
+    - name: Start Web Application
+      run: |
+        dotnet run --project PROYECTO_PDF/PROYECTOPDF/PROYECTOPDF.csproj &
+        sleep 30 # Esperar a que el servidor inicie
+      
     - name: Test with XPlat coverage
       run: dotnet test PROYECTO_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj --collect:"XPlat Code Coverage"
       
