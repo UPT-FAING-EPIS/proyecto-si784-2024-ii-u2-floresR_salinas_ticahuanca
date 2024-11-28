@@ -206,7 +206,7 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
    **Informes**:
 
-   Informe - SonarQube
+   ## Informe - SonarQube
 
    ![image](https://github.com/user-attachments/assets/e1df9c33-0755-4992-8c1b-a7fc9e769bfe)
 
@@ -236,15 +236,15 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
    ![image](https://github.com/user-attachments/assets/c13373f5-984e-4ccf-94d7-b315f563b930)
 
-   Informe - COVERaga
+   ## Informe - COVERaga
 
    ![image](https://github.com/user-attachments/assets/466f1536-c42d-46d8-9b68-7688083fe94a)
 
-   Informe - Integracion con InmemoryDatabase en vez de moq
+   ## Informe - Integracion con InmemoryDatabase en vez de moq
 
    ![image](https://github.com/user-attachments/assets/2e291f1b-9c58-4f5c-95de-5904ebf2b673)
 
-   Informe - Pruebas con mutaciones
+   ## Informe - Pruebas con mutaciones
 
    ![image](https://github.com/user-attachments/assets/15b85b30-9bdb-4c71-bed7-06bfc1d2348e)
 
@@ -279,6 +279,22 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
 #### Informe de Pruebas de Interfaz de Usuario
 - Analiza los videos
+
+## Semgrep Reporte
+
+![image](https://github.com/user-attachments/assets/62b5fb8e-f88d-4e00-ad2c-dc81ca43db4c)
+
+## Snyk Reporte 
+
+![image](https://github.com/user-attachments/assets/fed15ad1-4037-446e-9178-ff17f068de50)
+
+## Prueba BDD
+
+![image](https://github.com/user-attachments/assets/ec46ca1d-953c-4d5d-89b1-f7eff1b0f323)
+
+![image](https://github.com/user-attachments/assets/2177240a-d004-41c2-9374-901d2631e057)
+
+![image](https://github.com/user-attachments/assets/d29d5d8e-f105-4b10-93a6-9c02f12d8d83)
 
     7.2.   Metodología, técnicas usadas
 
