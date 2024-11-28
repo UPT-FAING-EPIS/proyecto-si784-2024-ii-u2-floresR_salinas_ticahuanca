@@ -158,6 +158,18 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     ![image](https://github.com/user-attachments/assets/8a1b85f7-6883-49e0-ad3e-8a4462c5e263)
 
+    ### **Diagrama de Secuencia:** 
+
+    Inicio Session
+
+    Comprar Suscripción Premium
+
+    Fusionar PDF
+
+    Cortar PDF
+
+    Ver Operaciones Realizadas
+
     ### **Diagrama de Componentes:**
 
     ![image](https://github.com/user-attachments/assets/ee9f7230-e433-4985-919a-d7e404923c1b)
