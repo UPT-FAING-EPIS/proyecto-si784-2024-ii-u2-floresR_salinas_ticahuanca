@@ -8,6 +8,14 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Debug - List Repository Contents
+      run: |
+        pwd
+        echo "Current directory contents:"
+        ls -la
+        echo "PROYECTO_PDF contents:"
+        ls -la PROYECTO_PDF/
+
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
@@ -26,23 +34,26 @@ jobs:
         
     - name: Restore .NET dependencies
       run: |
-        dotnet restore "./NegocioPDF/NegocioPDF.csproj"
-        dotnet restore "./NegocioPDF.Tests/NegocioPDF.Tests.csproj"
+        dotnet restore "PROYECTO_PDF/PROYECTOPDF/PROYECTOPDF.csproj"
+        dotnet restore "PROYECTO_PDF/NegocioPDF/NegocioPDF.csproj"
+        dotnet restore "PROYECTO_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj"
 
     - name: Build
       run: |
-        dotnet build "./NegocioPDF/NegocioPDF.csproj" --no-restore
-        dotnet build "./NegocioPDF.Tests/NegocioPDF.Tests.csproj" --no-restore
+        dotnet build "PROYECTO_PDF/PROYECTOPDF/PROYECTOPDF.csproj" --no-restore
+        dotnet build "PROYECTO_PDF/NegocioPDF/NegocioPDF.csproj" --no-restore
+        dotnet build "PROYECTO_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj" --no-restore
 
     - name: Start Application
       run: |
-        dotnet run --project "./NegocioPDF/NegocioPDF.csproj" --urls http://localhost:5260 &
+        dotnet run --project "PROYECTO_PDF/PROYECTOPDF/PROYECTOPDF.csproj" --urls http://localhost:5260 &
         echo "Waiting for application to start..."
         sleep 15
 
     - name: Run UI Tests
       run: |
-        dotnet test "./NegocioPDF.Tests/NegocioPDF.Tests.csproj" --filter "FullyQualifiedName~UITests"
+        cd PROYECTO_PDF/NegocioPDF.Tests
+        dotnet test --filter "FullyQualifiedName~UITests"
 
     - name: Upload test results
       if: always()
@@ -50,14 +61,11 @@ jobs:
       with:
         name: test-results
         path: |
-          ./NegocioPDF.Tests/videos/
-          ./NegocioPDF.Tests/*.png
-          ./NegocioPDF.Tests/TestResults/
+          PROYECTO_PDF/NegocioPDF.Tests/videos/
+          PROYECTO_PDF/NegocioPDF.Tests/*.png
+          PROYECTO_PDF/NegocioPDF.Tests/TestResults/
         retention-days: 14
 
-    - name: Stop Application
-      if: always()
-      run: killall dotnet
     - name: Stop Application
       if: always()
       run: killall dotnet
