@@ -1,13 +1,9 @@
 name: Security Analysis
-
 env:
-  DOTNET_VERSION: '8.x'
-
+  DOTNET_VERSION: '8.x'                     # La versión de .NET
 on: push
-
 permissions:
   contents: write
-
 jobs:
   security:
     runs-on: ubuntu-latest
@@ -20,8 +16,8 @@ jobs:
         run: docker pull semgrep/semgrep
 
       - name: Run Semgrep
-        run: docker run --rm -v "${PWD}:/src" semgrep/semgrep scan --metrics=off --config "p/default" --json --output=semgrep.json /src/Proyecto_PDF
-
+        run: docker run --rm -v $(pwd):/src semgrep/semgrep semgrep scan --config="p/default" --json --output semgrep.json --metrics=off
+       
       - name: Install prospector-html
         run: python -m pip install prospector2html
 
@@ -40,9 +36,7 @@ jobs:
         run: npm install -g snyk-to-html
 
       - name: Run Snyk test
-        run: |
-          cd Proyecto_PDF
-          snyk code test --json | snyk-to-html -o ../snyk-report.html
+        run: snyk code test --json | snyk-to-html -o snyk-report.html
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
@@ -52,9 +46,9 @@ jobs:
           mkdir -p public/reports
           mv semgrep-report.html public/reports/
           mv snyk-report.html public/reports/
-
+          
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.G_TOKEN }}
-          publish_dir: public
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: public  # Publicar la carpeta 'public' en GitHub Pages
