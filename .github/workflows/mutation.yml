@@ -14,9 +14,6 @@ permissions:
 
 jobs:
   mutation-testing:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     
     steps:
@@ -45,18 +42,34 @@ jobs:
         cd PROYECTO_PDF/NegocioPDF.Tests
         dotnet stryker
         
+    - name: Upload mutation report artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: mutation-report
+        path: PROYECTO_PDF/NegocioPDF.Tests/StrykerOutput/
+        if-no-files-found: error
+
+  deploy-report:
+    needs: mutation-testing
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+    - name: Download mutation report
+      uses: actions/download-artifact@v3
+      with:
+        name: mutation-report
+        path: public
+
     - name: Setup Pages
       uses: actions/configure-pages@v4
 
-    - name: Move reports to GitHub Pages directory
-      run: |
-        mkdir -p ./public
-        cp -r PROYECTO_PDF/NegocioPDF.Tests/StrykerOutput/*/* ./public/
-        
     - name: Upload Pages artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./public
+        path: public
 
     - name: Deploy to GitHub Pages
       id: deployment
@@ -64,10 +77,20 @@ jobs:
 
     - name: Check mutation score
       run: |
-        cd PROYECTO_PDF/NegocioPDF.Tests
-        MUTATION_SCORE=$(jq '.mutationScore' StrykerOutput/*/reports/mutation-report.json)
-        echo "Mutation score: $MUTATION_SCORE"
-        if (( $(echo "$MUTATION_SCORE < 80" | bc -l) )); then
-          echo "Mutation score is below 80%"
+        if [ -f "public/*/reports/mutation-report.json" ]; then
+          MUTATION_SCORE=$(jq '.mutationScore' public/*/reports/mutation-report.json)
+          echo "Current mutation score: $MUTATION_SCORE%"
+          
+          MINIMUM_SCORE=80
+          echo "Required minimum score: $MINIMUM_SCORE%"
+          
+          if (( $(echo "$MUTATION_SCORE < $MINIMUM_SCORE" | bc -l) )); then
+            echo "❌ Error: Mutation score ($MUTATION_SCORE%) is below the required minimum ($MINIMUM_SCORE%)"
+            exit 1
+          else
+            echo "✅ Success: Mutation score ($MUTATION_SCORE%) meets the requirement"
+          fi
+        else
+          echo "❌ Error: Mutation report not found"
           exit 1
         fi
