@@ -16,7 +16,7 @@ public class SubscriptionTests : PageTest
     {
         var browser = await Playwright.Chromium.LaunchAsync(new()
         {
-            Headless = false,
+            Headless = true,
             SlowMo = 1000
         });
 
