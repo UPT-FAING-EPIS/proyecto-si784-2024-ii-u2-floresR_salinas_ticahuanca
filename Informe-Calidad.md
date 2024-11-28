@@ -206,7 +206,7 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
    **Informes**:
 
-   SonarQube
+   Informe - SonarQube
 
    ![image](https://github.com/user-attachments/assets/e1df9c33-0755-4992-8c1b-a7fc9e769bfe)
 
@@ -236,10 +236,25 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
    ![image](https://github.com/user-attachments/assets/c13373f5-984e-4ccf-94d7-b315f563b930)
 
-   COVERaga
+   Informe - COVERaga
+
+   ![image](https://github.com/user-attachments/assets/466f1536-c42d-46d8-9b68-7688083fe94a)
+
+   Informe - Integracion con InmemoryDatabase en vez de moq
+
+   ![image](https://github.com/user-attachments/assets/2e291f1b-9c58-4f5c-95de-5904ebf2b673)
+
+   Informe - Pruebas con mutaciones
+
+   ![image](https://github.com/user-attachments/assets/15b85b30-9bdb-4c71-bed7-06bfc1d2348e)
+
+   ![image](https://github.com/user-attachments/assets/c59b2d6a-a35a-42f1-b9d3-df304c4cccb7)
+
+   ![image](https://github.com/user-attachments/assets/8793aaf1-384d-4a74-9d7e-195cbec528a7)
 
    
    
+
 
     7.2.   Metodología, técnicas usadas
 
