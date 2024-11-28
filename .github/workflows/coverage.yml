@@ -20,16 +20,16 @@ jobs:
         
     - name: Restore dependencies
       run: |
-        dotnet restore PROYECTO_PDF/NEGOCIOPDF.csproj
-        dotnet restore NEGOCIOPDF.Tests/NEGOCIOPDF.Tests.csproj
+        dotnet restore proyecto_pdf/negociopdf/negociopdf.csproj
+        dotnet restore proyecto_pdf/negociopdf.tests/negociopdf.tests.csproj
       
     - name: Build
       run: |
-        dotnet build PROYECTO_PDF/NEGOCIOPDF.csproj --no-restore
-        dotnet build NEGOCIOPDF.Tests/NEGOCIOPDF.Tests.csproj --no-restore
+        dotnet build proyecto_pdf/negociopdf/negociopdf.csproj --no-restore
+        dotnet build proyecto_pdf/negociopdf.tests/negociopdf.tests.csproj --no-restore
       
     - name: Test with coverage
-      run: dotnet test NEGOCIOPDF.Tests/NEGOCIOPDF.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage/
+      run: dotnet test proyecto_pdf/negociopdf.tests/negociopdf.tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage/
       
     - name: Generate coverage report
       uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
@@ -50,3 +50,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./coveragereport
         force_orphan: true
+
