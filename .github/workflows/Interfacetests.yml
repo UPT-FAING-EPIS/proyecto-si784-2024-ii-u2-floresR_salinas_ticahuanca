@@ -1,0 +1,73 @@
+name: Playwright UI Tests
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install Playwright Dependencies
+      run: |
+        npm init -y
+        npm install -D @playwright/test
+        npx playwright install --with-deps chromium
+
+    - name: Restore .NET dependencies
+      run: |
+        dotnet restore "PROYECTO_PDF/PROYECTOPDF/PROYECTOPDF.csproj"
+        dotnet restore "PROYECTO_PDF/NegocioPDF/NegocioPDF.csproj"
+        dotnet restore "PROYECTO_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj"
+
+    - name: Build
+      run: |
+        dotnet build "PROYECTO_PDF/PROYECTOPDF/PROYECTOPDF.csproj" --no-restore
+        dotnet build "PROYECTO_PDF/NegocioPDF/NegocioPDF.csproj" --no-restore
+        dotnet build "PROYECTO_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj" --no-restore
+
+    - name: Start Application
+      run: |
+        dotnet run --project "PROYECTO_PDF/PROYECTOPDF/PROYECTOPDF.csproj" --urls http://localhost:5260 &
+        echo "Waiting for application to start..."
+        sleep 15
+
+    - name: Run UI Tests with Xvfb
+      run: |
+        cd PROYECTO_PDF/NegocioPDF.Tests
+        xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" dotnet test --filter "FullyQualifiedName~UITests"
+
+    - name: Debug - List Files
+      if: always()
+      run: |
+        echo "Current directory:"
+        pwd
+        echo "Content of bin/Debug/net8.0/videos:"
+        ls -la PROYECTO_PDF/NegocioPDF.Tests/bin/Debug/net8.0/videos/
+        echo "All test files:"
+        find PROYECTO_PDF/NegocioPDF.Tests/bin/Debug/net8.0 -type f
+
+    - name: Upload Test Artifacts
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: |
+          PROYECTO_PDF/NegocioPDF.Tests/bin/Debug/net8.0/videos/
+          PROYECTO_PDF/NegocioPDF.Tests/bin/Debug/net8.0/*.png
+          PROYECTO_PDF/NegocioPDF.Tests/TestResults/
+        retention-days: 14
+
+    - name: Stop Application
+      if: always()
+      run: killall dotnet || true

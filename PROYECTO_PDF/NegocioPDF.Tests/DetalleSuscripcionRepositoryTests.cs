@@ -3,7 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using NegocioPDF.Data;
 using NegocioPDF.Models;
 using NegocioPDF.Repositories;
-
+namespace NegocioPDF.Tests
+{
 [TestFixture]
 public class DetalleSuscripcionRepositoryTests
 {
@@ -110,4 +111,5 @@ public class DetalleSuscripcionRepositoryTests
         Assert.That(suscripcionActualizada.fecha_final, Is.EqualTo(nuevaFecha));
         Assert.That(suscripcionActualizada.precio, Is.EqualTo(99.99m));
     }
+}
 }

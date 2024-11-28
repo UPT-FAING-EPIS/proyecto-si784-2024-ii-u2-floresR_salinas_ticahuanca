@@ -1,0 +1,74 @@
+name: .NET Coverage Cross-Platform
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  test:
+    name: Test Coverage on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'
+        
+    - name: Install ReportGenerator tool
+      run: dotnet tool install -g dotnet-reportgenerator-globaltool
+      
+    - name: Test with XPlat coverage (excluding UI tests)
+      run: dotnet test PROYECTO_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj --collect:"XPlat Code Coverage" --filter "FullyQualifiedName!~UITests.SubscriptionTests"
+      
+    - name: Generate Report
+      if: matrix.os == 'ubuntu-latest'
+      run: |
+        mkdir -p pages/reports
+        reportgenerator -reports:"**/coverage.cobertura.xml" -targetdir:"pages/reports" -reporttypes:"Html;Badges"
+        
+    - name: Upload coverage report artifact
+      if: matrix.os == 'ubuntu-latest'
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report
+        path: pages
+        retention-days: 1
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+    - name: Download coverage report
+      uses: actions/download-artifact@v3
+      with:
+        name: coverage-report
+        path: ./pages
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+      
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './pages'
+        
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4

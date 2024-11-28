@@ -1,0 +1,76 @@
+name: Mutation Testing
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  mutation-testing:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'
+        
+    - name: Install Stryker
+      run: dotnet tool install -g dotnet-stryker
+        
+    - name: Restore dependencies
+      run: |
+        cd PROYECTO_PDF
+        dotnet restore
+        
+    - name: Build
+      run: |
+        cd PROYECTO_PDF
+        dotnet build --no-restore
+        
+    - name: Run mutation tests
+      run: |
+        cd PROYECTO_PDF/NegocioPDF.Tests
+        dotnet stryker
+        
+    - name: Upload mutation report artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: mutation-report
+        path: PROYECTO_PDF/NegocioPDF.Tests/StrykerOutput/
+        if-no-files-found: error
+
+  deploy-report:
+    needs: mutation-testing
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+    - name: Download mutation report
+      uses: actions/download-artifact@v3
+      with:
+        name: mutation-report
+        path: public
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: public
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
