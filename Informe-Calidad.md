@@ -189,12 +189,13 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
     ![image](https://github.com/user-attachments/assets/7b7ed41d-394d-400b-bbdd-48b278e1eb89)
 
 
+
 6. Desarrollo de la propuesta (Aqui va el analisis de su aplicación con SonarQube y Snyk, para que les muestre todos los aspectos a mejorar de su aplicación)
 
     7.1.   Tecnología de información 
 
     **SonarQube**: Es una herramienta de análisis estático de código que permite revisar automáticamente la calidad del código fuente de la aplicación. SonarQube analiza la base de código y genera reportes sobre posibles errores, vulnerabilidades, deuda técnica, código duplicado y áreas donde se pueden aplicar mejoras. Además, realiza un seguimiento continuo de la calidad del código, integrándose con herramientas de CI/CD como GitHub Actions.
-
+   
     **Snyk**: Snyk es una plataforma de seguridad que se enfoca en la gestión de vulnerabilidades en las dependencias y bibliotecas de código abierto. Durante el análisis, se identifican posibles vulnerabilidades en las dependencias de terceros, lo que permite corregir problemas de seguridad antes de que afecten la producción.
 
     **ASP.NET Core y C#**: El proyecto está desarrollado en ASP.NET Core utilizando el lenguaje de programación C#. Esto permite implementar una aplicación web robusta y escalable, con soporte para múltiples plataformas.
@@ -202,6 +203,43 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
     **GitHub y GitHub Actions**: Se utilizó GitHub como sistema de control de versiones y plataforma de colaboración. GitHub Actions se empleó para la integración continua, ejecutando automáticamente los análisis de calidad del código con SonarQube y los análisis de seguridad con Snyk en cada push al repositorio.
 
     **MariaDB/MySQL**: Para la base de datos se utilizó MariaDB, que es una bifurcación de MySQL. Esta tecnología permitió gestionar el almacenamiento de datos de manera eficiente, con soporte para transacciones y consultas complejas.
+
+   **Informes**:
+
+   SonarQube
+
+   ![image](https://github.com/user-attachments/assets/e1df9c33-0755-4992-8c1b-a7fc9e769bfe)
+
+   ![image](https://github.com/user-attachments/assets/5adfcd3b-c054-4b8c-b7c2-158a3831c8e6)
+
+   ![image](https://github.com/user-attachments/assets/c6d6c168-b26a-4a2d-a6b9-03ee408bad1b)
+
+   ![image](https://github.com/user-attachments/assets/1625a7e3-1552-44c5-b271-0d6e0179c59a)
+
+   ![image](https://github.com/user-attachments/assets/b9d7db88-6e9e-48a9-872d-e6e77308660d)
+
+   ![image](https://github.com/user-attachments/assets/01b87c2f-518e-4dda-9480-69b56d7a20b0)
+
+   ![image](https://github.com/user-attachments/assets/f7fa2ab4-698b-41a7-82f4-86b7a41d0ff3)
+
+   ![image](https://github.com/user-attachments/assets/2c96f4f1-0830-47bc-aa13-ae169bf12b9c)
+
+   ![image](https://github.com/user-attachments/assets/fef6f6ba-aaae-4afd-95e8-876624a79214)
+
+   ![image](https://github.com/user-attachments/assets/711acbb0-9da8-4b7c-8de2-4e28b0dd2799)
+
+   ![image](https://github.com/user-attachments/assets/1cf8d2d9-1c9b-405c-82b0-5f80516672a6)
+
+   ![image](https://github.com/user-attachments/assets/c0a3ae36-8ba5-4898-977e-5cd0492d4656)
+
+   ![image](https://github.com/user-attachments/assets/34bee983-d0f7-4d94-bf04-7e11c6381bf7)
+
+   ![image](https://github.com/user-attachments/assets/c13373f5-984e-4ccf-94d7-b315f563b930)
+
+   COVERaga
+
+   
+   
 
     7.2.   Metodología, técnicas usadas
 
@@ -217,5 +255,5 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
     
     - **Snyk**: Se utilizó Snyk para identificar vulnerabilidades en las dependencias de terceros, ofreciendo soluciones y actualizaciones a las bibliotecas vulnerables, mejorando la seguridad general de la aplicación.
 
-7. Cronograma
+8. Cronograma
    (personas, tiempo, otros recursos) Basado en las observaciones que la herramienta SonarQube les informara         sobre la aplicación, a fin de reducir la deuda tecnica, vulnerabilidades, fallas, etc. a 0.
