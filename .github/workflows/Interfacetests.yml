@@ -1,0 +1,60 @@
+name: Playwright UI Tests
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install Playwright and browsers
+      run: |
+        dotnet tool install --global Microsoft.Playwright.CLI
+        dotnet playwright install
+        dotnet playwright install-deps
+
+    - name: Restore dependencies
+      run: |
+        dotnet restore "./NegocioPDF/NegocioPDF.csproj"
+        dotnet restore "./NegocioPDF.Tests/NegocioPDF.Tests.csproj"
+
+    - name: Build
+      run: |
+        dotnet build "./NegocioPDF/NegocioPDF.csproj" --no-restore
+        dotnet build "./NegocioPDF.Tests/NegocioPDF.Tests.csproj" --no-restore
+
+    - name: Start Application
+      run: |
+        dotnet run --project "./NegocioPDF/NegocioPDF.csproj" --urls http://localhost:5260 &
+        echo "Waiting for application to start..."
+        sleep 15
+
+    - name: Run UI Tests
+      run: |
+        dotnet test "./NegocioPDF.Tests/NegocioPDF.Tests.csproj" --filter "FullyQualifiedName~SubscriptionTests"
+
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: |
+          ./NegocioPDF.Tests/videos/
+          ./NegocioPDF.Tests/*.png
+          ./NegocioPDF.Tests/TestResults/
+        retention-days: 14
+
+    - name: Stop Application
+      if: always()
+      run: killall dotnet
