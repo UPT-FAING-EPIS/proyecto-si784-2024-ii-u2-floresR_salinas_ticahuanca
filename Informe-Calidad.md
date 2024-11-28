@@ -361,7 +361,13 @@ Reporte de Pruebas de interfaz de usuario
 
 Pruebas de interfaz Web, Desktop, Mobile (al menos 3 completas) incluir el video generado de forma automatizada por el framework
 
+[video_1.webm](https://github.com/user-attachments/assets/40ad6cfb-b6f2-427b-8a7c-fc5d852765ae)
 
+[video_2.webm](https://github.com/user-attachments/assets/4acbbbc6-ebb9-4a6a-92dd-6850fdd04439)
+
+[video_3.webm](https://github.com/user-attachments/assets/33e2e998-1436-4717-a177-c1f68fc484d1)
+
+[video_4.webm](https://github.com/user-attachments/assets/f494f317-d15e-4ec9-8e7c-7970aef15b8b)
 
 ## Semgrep Reporte
 
