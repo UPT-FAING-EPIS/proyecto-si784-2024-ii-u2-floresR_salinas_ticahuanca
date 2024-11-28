@@ -8,14 +8,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Debug - List Repository Contents
-      run: |
-        pwd
-        echo "Current directory contents:"
-        ls -la
-        echo "PROYECTO_PDF contents:"
-        ls -la PROYECTO_PDF/
-
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
@@ -26,12 +18,17 @@ jobs:
       with:
         node-version: '20'
 
-    - name: Install Playwright Browsers and Dependencies
+    - name: Install Playwright Dependencies
       run: |
         npm init -y
         npm install -D @playwright/test
         npx playwright install --with-deps chromium
-        
+
+    - name: Create Directories
+      run: |
+        mkdir -p PROYECTO_PDF/NegocioPDF.Tests/videos
+        mkdir -p PROYECTO_PDF/NegocioPDF.Tests/screenshots
+
     - name: Restore .NET dependencies
       run: |
         dotnet restore "PROYECTO_PDF/PROYECTOPDF/PROYECTOPDF.csproj"
@@ -50,19 +47,40 @@ jobs:
         echo "Waiting for application to start..."
         sleep 15
 
-    - name: Run UI Tests
+    - name: Run UI Tests with Xvfb
       run: |
-        cd PROYECTO_PDF/NegocioPDF.Tests
-        dotnet test --filter "FullyQualifiedName~UITests"
+        xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" dotnet test "PROYECTO_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj" --filter "FullyQualifiedName~UITests"
 
-    - name: Upload test results
+    - name: List Generated Files
+      if: always()
+      run: |
+        echo "Contents of test directories:"
+        ls -R PROYECTO_PDF/NegocioPDF.Tests/
+
+    - name: Upload Screenshots
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: screenshots
+        path: |
+          PROYECTO_PDF/NegocioPDF.Tests/*.png
+        retention-days: 14
+
+    - name: Upload Videos
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: videos
+        path: |
+          PROYECTO_PDF/NegocioPDF.Tests/videos/
+        retention-days: 14
+
+    - name: Upload Test Results
       if: always()
       uses: actions/upload-artifact@v3
       with:
         name: test-results
         path: |
-          PROYECTO_PDF/NegocioPDF.Tests/videos/
-          PROYECTO_PDF/NegocioPDF.Tests/*.png
           PROYECTO_PDF/NegocioPDF.Tests/TestResults/
         retention-days: 14
 
