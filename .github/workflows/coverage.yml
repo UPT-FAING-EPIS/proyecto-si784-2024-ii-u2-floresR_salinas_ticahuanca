@@ -27,22 +27,15 @@ jobs:
       with:
         dotnet-version: '8.0.x'
         
-    - name: Restore dependencies
-      run: dotnet restore ProyectoPDF/proyectoPDF.sln
+    - name: Install ReportGenerator tool
+      run: dotnet tool install -g dotnet-reportgenerator-globaltool
+        
+    - name: Test with XPlat coverage
+      run: dotnet test PROYECTO_PDF/NegocioPDF.Tests/NegocioPDF.Tests.csproj --collect:"XPlat Code Coverage"
       
-    - name: Build
-      run: dotnet build --no-restore
-      
-    - name: Test with coverage
-      run: dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage/
-      
-    - name: Generate Coverage Report
+    - name: Generate Report
       if: matrix.os == 'ubuntu-latest'
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26
-      with:
-        reports: '**/coverage.cobertura.xml'
-        targetdir: 'coveragereport'
-        reporttypes: 'Html;Badges'
+      run: reportgenerator -reports:"**/coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:"Html;Badges"
         
     - name: Upload coverage report artifact
       if: matrix.os == 'ubuntu-latest'
@@ -77,7 +70,3 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./coveragereport
-        force_orphan: true
