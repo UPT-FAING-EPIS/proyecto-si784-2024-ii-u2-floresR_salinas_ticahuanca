@@ -253,7 +253,30 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
    ![image](https://github.com/user-attachments/assets/8793aaf1-384d-4a74-9d7e-195cbec528a7)
 
    
-   
+   Este es un reporte de Stryker.NET, una herramienta de pruebas mutantes. Vamos a analizarlo por partes:
+   En la barra superior colorida:
+    ●	Verde (82): Mutantes eliminados (bueno)
+    ●	Rojo (27): Mutantes sobrevivieron (malo)
+    ●	Naranja (25): Sin cobertura
+
+   Las columnas principales muestran:
+    1.	Mutation Score:
+      ○	"Of total": 61.19% - porcentaje general de mutantes eliminados
+      ○	"Of covered": 75.23% - porcentaje de mutantes eliminados en código cubierto por pruebas
+    2.	Estado de los Mutantes:
+      ○	Killed (82): Mutantes que tus pruebas detectaron y fallaron (¡bueno!)
+      ○	Survived (27): Mutantes que tus pruebas no detectaron (malo)
+      ○	No coverage (25): Código sin pruebas unitarias
+      ○	Ignored (105): Mutantes que se ignoraron
+
+    Por carpetas:
+      ●	Data/PDFSolutionsContext.cs: 34.38% de efectividad
+      ●	Migrations: 0% (normal, no se suelen probar)
+      ●	Models: N/A
+      ●	Repositories: 80.68% (bastante bueno)
+
+    Informe - Pruebas de Interfaz de usuario
+      ANALIZA LOS VIDEOS
 
 
     7.2.   Metodología, técnicas usadas
