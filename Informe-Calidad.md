@@ -196,10 +196,9 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     ![image](https://github.com/user-attachments/assets/64c4d2bb-5101-4e13-95b2-f5b606eecfbe)
 
-    ### **Diagrama de Objetos: **
+    ### **Diagrama de Objetos:**
 
     ![image](https://github.com/user-attachments/assets/c7dcb564-4017-47bd-9f46-cdc1614c934c)
-
 
 7. Desarrollo de la propuesta (Aqui va el analisis de su aplicación con SonarQube y Snyk, para que les muestre todos los aspectos a mejorar de su aplicación)
 
@@ -231,7 +230,6 @@ Análisis de la Aplicación con Semgrep
 
 ![image](https://github.com/user-attachments/assets/428b807c-c12c-4a7c-b6fd-39a8445ee6e9)
 
-
     7.1.   Tecnología de información 
 
     **SonarQube**: Es una herramienta de análisis estático de código que permite revisar automáticamente la calidad del código fuente de la aplicación. SonarQube analiza la base de código y genera reportes sobre posibles errores, vulnerabilidades, deuda técnica, código duplicado y áreas donde se pueden aplicar mejoras. Además, realiza un seguimiento continuo de la calidad del código, integrándose con herramientas de CI/CD como GitHub Actions.
@@ -258,20 +256,20 @@ Análisis de la Aplicación con Semgrep
     
     - **Snyk**: Se utilizó Snyk para identificar vulnerabilidades en las dependencias de terceros, ofreciendo soluciones y actualizaciones a las bibliotecas vulnerables, mejorando la seguridad general de la aplicación.
 
-9. Cronograma
+8. Cronograma
    (personas, tiempo, otros recursos) Basado en las observaciones que la herramienta SonarQube les informara         sobre la aplicación, a fin de reducir la deuda tecnica, vulnerabilidades, fallas, etc. a 0.
 
-10. Desarrollo de Solución de Mejora
+9. Desarrollo de Solución de Mejora
 
-9.2 Diagrama de Arquitectura de la aplicación
+9.1 Diagrama de Arquitectura de la aplicación
 
 ![image](https://github.com/user-attachments/assets/2036117d-d7a1-4a6e-9b14-efe9e6ccbb13)
 
-9.3. Diagrama de Clases de la aplicación
+9.2. Diagrama de Clases de la aplicación
 
 ![image](https://github.com/user-attachments/assets/0c082be2-d5dd-481b-a264-7b4d573f4a5b)
 
-9.4. Metodos de pruebas implementados para coberturar la aplicación
+9.3. Metodos de pruebas implementados para coberturar la aplicación
 
 - Reporte de cobertura de pruebas
 
