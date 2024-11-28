@@ -253,31 +253,32 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
    ![image](https://github.com/user-attachments/assets/8793aaf1-384d-4a74-9d7e-195cbec528a7)
 
    
-   Este es un reporte de Stryker.NET, una herramienta de pruebas mutantes. Vamos a analizarlo por partes:
-   En la barra superior colorida:
-    ●	Verde (82): Mutantes eliminados (bueno)
-    ●	Rojo (27): Mutantes sobrevivieron (malo)
-    ●	Naranja (25): Sin cobertura
+# Reporte de Stryker.NET - Análisis de Pruebas Mutantes
 
-   Las columnas principales muestran:
-    1.	Mutation Score:
-      ○	"Of total": 61.19% - porcentaje general de mutantes eliminados
-      ○	"Of covered": 75.23% - porcentaje de mutantes eliminados en código cubierto por pruebas
-    2.	Estado de los Mutantes:
-      ○	Killed (82): Mutantes que tus pruebas detectaron y fallaron (¡bueno!)
-      ○	Survived (27): Mutantes que tus pruebas no detectaron (malo)
-      ○	No coverage (25): Código sin pruebas unitarias
-      ○	Ignored (105): Mutantes que se ignoraron
+## Barra Superior Colorida
+- **Verde (82)**: Mutantes eliminados (**¡Bueno!**)
+- **Rojo (27)**: Mutantes sobrevivieron (**¡Malo!**)
+- **Naranja (25)**: Sin cobertura
 
-    Por carpetas:
-      ●	Data/PDFSolutionsContext.cs: 34.38% de efectividad
-      ●	Migrations: 0% (normal, no se suelen probar)
-      ●	Models: N/A
-      ●	Repositories: 80.68% (bastante bueno)
+### Columnas Principales
+#### 1. **Mutation Score**
+- **Of total**: 61.19% - Porcentaje general de mutantes eliminados
+- **Of covered**: 75.23% - Porcentaje de mutantes eliminados en código cubierto por pruebas
 
-    Informe - Pruebas de Interfaz de usuario
-      ANALIZA LOS VIDEOS
+#### 2. **Estado de los Mutantes**
+- **Killed (82)**: Mutantes que tus pruebas detectaron y fallaron (**¡Bueno!**)
+- **Survived (27)**: Mutantes que tus pruebas no detectaron (**¡Malo!**)
+- **No coverage (25)**: Código sin pruebas unitarias
+- **Ignored (105)**: Mutantes que se ignoraron
 
+### Análisis por Carpetas
+- **Data/PDFSolutionsContext.cs**: 34.38% de efectividad
+- **Migrations**: 0% (Normal, no se suelen probar)
+- **Models**: N/A
+- **Repositories**: 80.68% (**Bastante bueno**)
+
+#### Informe de Pruebas de Interfaz de Usuario
+- Analiza los videos
 
     7.2.   Metodología, técnicas usadas
 
