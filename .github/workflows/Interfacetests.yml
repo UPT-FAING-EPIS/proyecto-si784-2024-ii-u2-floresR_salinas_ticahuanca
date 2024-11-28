@@ -18,13 +18,13 @@ jobs:
       with:
         node-version: '20'
 
-    - name: Install Playwright and browsers
+    - name: Install Playwright Browsers and Dependencies
       run: |
-        dotnet tool install --global Microsoft.Playwright.CLI
-        dotnet playwright install
-        dotnet playwright install-deps
-
-    - name: Restore dependencies
+        npm init -y
+        npm install -D @playwright/test
+        npx playwright install --with-deps chromium
+        
+    - name: Restore .NET dependencies
       run: |
         dotnet restore "./NegocioPDF/NegocioPDF.csproj"
         dotnet restore "./NegocioPDF.Tests/NegocioPDF.Tests.csproj"
@@ -42,7 +42,7 @@ jobs:
 
     - name: Run UI Tests
       run: |
-        dotnet test "./NegocioPDF.Tests/NegocioPDF.Tests.csproj" --filter "FullyQualifiedName~SubscriptionTests"
+        dotnet test "./NegocioPDF.Tests/NegocioPDF.Tests.csproj" --filter "FullyQualifiedName~UITests"
 
     - name: Upload test results
       if: always()
@@ -55,6 +55,9 @@ jobs:
           ./NegocioPDF.Tests/TestResults/
         retention-days: 14
 
+    - name: Stop Application
+      if: always()
+      run: killall dotnet
     - name: Stop Application
       if: always()
       run: killall dotnet
