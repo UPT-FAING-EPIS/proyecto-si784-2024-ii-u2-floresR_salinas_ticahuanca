@@ -1,47 +1,82 @@
-name: Code Coverage
+name: .NET Coverage Cross-Platform
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    
+  test:
+    name: Test Coverage on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
     steps:
     - uses: actions/checkout@v3
     
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 8.0.x
+        dotnet-version: '8.0.x'
         
     - name: Restore dependencies
-      run: dotnet restore PROYECTO_PDF/PROYECTOPDF.sln
+      run: dotnet restore
       
     - name: Build
-      run: dotnet build PROYECTO_PDF/PROYECTOPDF.sln --no-restore
+      run: dotnet build --no-restore
       
     - name: Test with coverage
-      run: dotnet test PROYECTO_PDF/PROYECTOPDF.sln /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage/
+      run: dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage/
       
-    - name: Generate coverage report
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
+    - name: Generate Coverage Report
+      if: matrix.os == 'ubuntu-latest'
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26
       with:
         reports: '**/coverage.cobertura.xml'
         targetdir: 'coveragereport'
-        reporttypes: 'HtmlInline_AzurePipelines;Cobertura;Badges'
+        reporttypes: 'Html;Badges'
         
-    - name: Upload coverage report
+    - name: Upload coverage report artifact
+      if: matrix.os == 'ubuntu-latest'
       uses: actions/upload-artifact@v3
       with:
-        name: CoverageReport
+        name: coverage-report
         path: coveragereport
+        retention-days: 1
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+    - name: Download coverage report
+      uses: actions/download-artifact@v3
+      with:
+        name: coverage-report
+        path: ./coverage-report
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+      
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './coverage-report'
         
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+      id: deployment
+      uses: actions/deploy-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./coveragereport
