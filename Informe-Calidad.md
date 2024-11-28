@@ -188,6 +188,17 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     ![image](https://github.com/user-attachments/assets/7b7ed41d-394d-400b-bbdd-48b278e1eb89)
 
+    ### **Diagrama de Despliegue:**
+
+    ![image](https://github.com/user-attachments/assets/6be85a75-eb13-477f-be3c-500c25c33920)
+
+    ### **Diagrama Base de datos relacional:**
+
+    ![image](https://github.com/user-attachments/assets/64c4d2bb-5101-4e13-95b2-f5b606eecfbe)
+
+    ### **Diagrama de Objetos: **
+
+    ![image](https://github.com/user-attachments/assets/c7dcb564-4017-47bd-9f46-cdc1614c934c)
 
 
 6. Desarrollo de la propuesta (Aqui va el analisis de su aplicación con SonarQube y Snyk, para que les muestre todos los aspectos a mejorar de su aplicación)
@@ -204,9 +215,38 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     **MariaDB/MySQL**: Para la base de datos se utilizó MariaDB, que es una bifurcación de MySQL. Esta tecnología permitió gestionar el almacenamiento de datos de manera eficiente, con soporte para transacciones y consultas complejas.
 
-   **Informes**:
+    7.2.   Metodología, técnicas usadas
 
-   ## Informe - SonarQube
+    Para el desarrollo de la aplicación, se adoptaron diversas metodologías y técnicas que permitieron optimizar el flujo de trabajo y asegurar la calidad del producto final. Entre las principales metodologías y técnicas utilizadas se destacan:
+
+    - **Desarrollo Ágil con GitHub Projects**: Se utilizó GitHub Projects para la planificación y gestión del trabajo en un entorno ágil. Las tareas se organizaron en tableros Kanban, permitiendo una visibilidad clara del progreso, asignación de tareas y establecimiento de prioridades. Cada tarea se vinculó con issues y pull requests dentro del repositorio, facilitando la colaboración y el seguimiento del avance de las funcionalidades.
+
+    - **Integración Continua (CI)**: Se implementó un flujo de integración continua a través de GitHub Actions. Cada vez que se realizaba un cambio en el código (mediante un push o pull request), se ejecutaban pruebas automáticas, análisis de calidad con SonarQube y análisis de seguridad con Snyk, asegurando que el código estuviera siempre en condiciones óptimas para ser fusionado con la rama principal.
+
+    - **Análisis Estático de Código**:
+    
+    - **SonarQube**: Para garantizar la calidad del código, se realizaron análisis estáticos con SonarQube, que permitió detectar errores, vulnerabilidades, duplicación de código y deuda técnica. Esto ayudó a mantener un código más limpio, eficiente y mantenible.
+    
+    - **Snyk**: Se utilizó Snyk para identificar vulnerabilidades en las dependencias de terceros, ofreciendo soluciones y actualizaciones a las bibliotecas vulnerables, mejorando la seguridad general de la aplicación.
+
+8. Cronograma
+   (personas, tiempo, otros recursos) Basado en las observaciones que la herramienta SonarQube les informara         sobre la aplicación, a fin de reducir la deuda tecnica, vulnerabilidades, fallas, etc. a 0.
+
+9. Desarrollo de Solución de Mejora
+
+9.2 Diagrama de Arquitectura de la aplicación
+
+![image](https://github.com/user-attachments/assets/2036117d-d7a1-4a6e-9b14-efe9e6ccbb13)
+
+9.3. Diagrama de Clases de la aplicación
+
+![image](https://github.com/user-attachments/assets/0c082be2-d5dd-481b-a264-7b4d573f4a5b)
+
+9.4. Metodos de pruebas implementados para coberturar la aplicación
+
+- Reporte de cobertura de pruebas
+
+   Pruebas Unitarias (cobertura de al menos 80% de codigo -  los metodos mas importantes)
 
    ![image](https://github.com/user-attachments/assets/e1df9c33-0755-4992-8c1b-a7fc9e769bfe)
 
@@ -236,15 +276,27 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
    ![image](https://github.com/user-attachments/assets/c13373f5-984e-4ccf-94d7-b315f563b930)
 
-   ## Informe - COVERaga
+   Pruebas de integración utilizando Mocks o Fake Classes
 
-   ![image](https://github.com/user-attachments/assets/466f1536-c42d-46d8-9b68-7688083fe94a)
+   ![image](https://github.com/user-attachments/assets/24797d8f-271e-4ba6-8622-5e0fceb3e15b)
 
-   ## Informe - Integracion con InmemoryDatabase en vez de moq
+   informe de integracion con InmemoryDatabase en vez de moq
 
-   ![image](https://github.com/user-attachments/assets/2e291f1b-9c58-4f5c-95de-5904ebf2b673)
+- Reporte de Pruebas guiadas por el comportamiento (BDD Given When Then)
 
-   ## Informe - Pruebas con mutaciones
+   Pruebas de aceptación basadas en Desarrollo Guiado por el Comportamiento una por cada caso de uso o historia de usuario.
+
+   ![image](https://github.com/user-attachments/assets/ec46ca1d-953c-4d5d-89b1-f7eff1b0f323)
+
+   ![image](https://github.com/user-attachments/assets/2177240a-d004-41c2-9374-901d2631e057)
+
+   ![image](https://github.com/user-attachments/assets/d29d5d8e-f105-4b10-93a6-9c02f12d8d83)
+
+- Reporte de Pruebas mutantes
+
+   Pruebas mutantes para ver todas las posibles pruebas.
+
+   Informe - Pruebas con mutaciones
 
    ![image](https://github.com/user-attachments/assets/15b85b30-9bdb-4c71-bed7-06bfc1d2348e)
 
@@ -253,32 +305,34 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
    ![image](https://github.com/user-attachments/assets/8793aaf1-384d-4a74-9d7e-195cbec528a7)
 
    
-# Reporte de Stryker.NET - Análisis de Pruebas Mutantes
+   Reporte de Stryker.NET - Análisis de Pruebas Mutantes
 
-## Barra Superior Colorida
-- **Verde (82)**: Mutantes eliminados (**¡Bueno!**)
-- **Rojo (27)**: Mutantes sobrevivieron (**¡Malo!**)
-- **Naranja (25)**: Sin cobertura
+   Barra Superior Colorida
+- Verde (82): Mutantes eliminados (¡Bueno!)
+- Rojo (27): Mutantes sobrevivieron (¡Malo!)
+- Naranja (25)**: Sin cobertura
 
-### Columnas Principales
-#### 1. **Mutation Score**
-- **Of total**: 61.19% - Porcentaje general de mutantes eliminados
-- **Of covered**: 75.23% - Porcentaje de mutantes eliminados en código cubierto por pruebas
+   Columnas Principales
+ 1. Mutation Score
+- Of total: 61.19% - Porcentaje general de mutantes eliminados
+- Of covered: 75.23% - Porcentaje de mutantes eliminados en código cubierto por pruebas
 
-#### 2. **Estado de los Mutantes**
-- **Killed (82)**: Mutantes que tus pruebas detectaron y fallaron (**¡Bueno!**)
-- **Survived (27)**: Mutantes que tus pruebas no detectaron (**¡Malo!**)
-- **No coverage (25)**: Código sin pruebas unitarias
-- **Ignored (105)**: Mutantes que se ignoraron
+ 2. Estado de los Mutantes
+- Killed (82): Mutantes que tus pruebas detectaron y fallaron (¡Bueno!)
+- Survived (27): Mutantes que tus pruebas no detectaron (¡Malo!)
+- No coverage (25): Código sin pruebas unitarias
+- Ignored (105): Mutantes que se ignoraron
 
-### Análisis por Carpetas
-- **Data/PDFSolutionsContext.cs**: 34.38% de efectividad
-- **Migrations**: 0% (Normal, no se suelen probar)
-- **Models**: N/A
-- **Repositories**: 80.68% (**Bastante bueno**)
+ Análisis por Carpetas
+- Data/PDFSolutionsContext.cs: 34.38% de efectividad
+- Migrations: 0% (Normal, no se suelen probar)
+- Models: N/A
+- Repositories: 80.68% (Bastante bueno)
 
-#### Informe de Pruebas de Interfaz de Usuario
-- Analiza los videos
+- Reporte de Pruebas de interfaz de usuario
+
+   Pruebas de interfaz Web, Desktop, Mobile (al menos 3 completas) incluir el video generado de forma automatizada por el framework
+  
 
 ## Semgrep Reporte
 
@@ -287,28 +341,3 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 ## Snyk Reporte 
 
 ![image](https://github.com/user-attachments/assets/fed15ad1-4037-446e-9178-ff17f068de50)
-
-## Prueba BDD
-
-![image](https://github.com/user-attachments/assets/ec46ca1d-953c-4d5d-89b1-f7eff1b0f323)
-
-![image](https://github.com/user-attachments/assets/2177240a-d004-41c2-9374-901d2631e057)
-
-![image](https://github.com/user-attachments/assets/d29d5d8e-f105-4b10-93a6-9c02f12d8d83)
-
-    7.2.   Metodología, técnicas usadas
-
-    Para el desarrollo de la aplicación, se adoptaron diversas metodologías y técnicas que permitieron optimizar el flujo de trabajo y asegurar la calidad del producto final. Entre las principales metodologías y técnicas utilizadas se destacan:
-
-    - **Desarrollo Ágil con GitHub Projects**: Se utilizó GitHub Projects para la planificación y gestión del trabajo en un entorno ágil. Las tareas se organizaron en tableros Kanban, permitiendo una visibilidad clara del progreso, asignación de tareas y establecimiento de prioridades. Cada tarea se vinculó con issues y pull requests dentro del repositorio, facilitando la colaboración y el seguimiento del avance de las funcionalidades.
-
-    - **Integración Continua (CI)**: Se implementó un flujo de integración continua a través de GitHub Actions. Cada vez que se realizaba un cambio en el código (mediante un push o pull request), se ejecutaban pruebas automáticas, análisis de calidad con SonarQube y análisis de seguridad con Snyk, asegurando que el código estuviera siempre en condiciones óptimas para ser fusionado con la rama principal.
-
-    - **Análisis Estático de Código**:
-    
-    - **SonarQube**: Para garantizar la calidad del código, se realizaron análisis estáticos con SonarQube, que permitió detectar errores, vulnerabilidades, duplicación de código y deuda técnica. Esto ayudó a mantener un código más limpio, eficiente y mantenible.
-    
-    - **Snyk**: Se utilizó Snyk para identificar vulnerabilidades en las dependencias de terceros, ofreciendo soluciones y actualizaciones a las bibliotecas vulnerables, mejorando la seguridad general de la aplicación.
-
-8. Cronograma
-   (personas, tiempo, otros recursos) Basado en las observaciones que la herramienta SonarQube les informara         sobre la aplicación, a fin de reducir la deuda tecnica, vulnerabilidades, fallas, etc. a 0.
