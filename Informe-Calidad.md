@@ -201,7 +201,36 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
     ![image](https://github.com/user-attachments/assets/c7dcb564-4017-47bd-9f46-cdc1614c934c)
 
 
-6. Desarrollo de la propuesta (Aqui va el analisis de su aplicación con SonarQube y Snyk, para que les muestre todos los aspectos a mejorar de su aplicación)
+7. Desarrollo de la propuesta (Aqui va el analisis de su aplicación con SonarQube y Snyk, para que les muestre todos los aspectos a mejorar de su aplicación)
+
+Análisis de la Aplicación con SonarQube
+
+![image](https://github.com/user-attachments/assets/374fe9a6-64de-4329-b98d-4b31907a8c94)
+
+![image](https://github.com/user-attachments/assets/ecadbbcc-4e9b-47f3-9946-376a80bae047)
+
+Análisis de la Aplicación con Snyk
+
+![image](https://github.com/user-attachments/assets/26e083d9-44aa-490e-90b5-5772db7fdf27)
+
+![image](https://github.com/user-attachments/assets/335b21dc-b8e6-495f-a83a-71be41c4714e)
+
+![image](https://github.com/user-attachments/assets/0ab79821-7793-4782-918f-f78ae3357eba)
+
+![image](https://github.com/user-attachments/assets/f5b988fc-9c81-4626-b36f-13b2cbda4874)
+
+![image](https://github.com/user-attachments/assets/ffffe161-0b96-4f82-bdcc-e4307e68f708)
+
+![image](https://github.com/user-attachments/assets/edecde05-1c7f-4dd5-947b-b562ab4c072d)
+
+![image](https://github.com/user-attachments/assets/8b21e404-77e3-442a-8614-832d8c3a9f26)
+
+Análisis de la Aplicación con Semgrep
+
+![image](https://github.com/user-attachments/assets/26fc401e-1624-4f64-be05-93396639cfb7)
+
+![image](https://github.com/user-attachments/assets/428b807c-c12c-4a7c-b6fd-39a8445ee6e9)
+
 
     7.1.   Tecnología de información 
 
@@ -229,10 +258,10 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
     
     - **Snyk**: Se utilizó Snyk para identificar vulnerabilidades en las dependencias de terceros, ofreciendo soluciones y actualizaciones a las bibliotecas vulnerables, mejorando la seguridad general de la aplicación.
 
-8. Cronograma
+9. Cronograma
    (personas, tiempo, otros recursos) Basado en las observaciones que la herramienta SonarQube les informara         sobre la aplicación, a fin de reducir la deuda tecnica, vulnerabilidades, fallas, etc. a 0.
 
-9. Desarrollo de Solución de Mejora
+10. Desarrollo de Solución de Mejora
 
 9.2 Diagrama de Arquitectura de la aplicación
 
@@ -329,10 +358,12 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 - Models: N/A
 - Repositories: 80.68% (Bastante bueno)
 
-- Reporte de Pruebas de interfaz de usuario
 
-   Pruebas de interfaz Web, Desktop, Mobile (al menos 3 completas) incluir el video generado de forma automatizada por el framework
-  
+Reporte de Pruebas de interfaz de usuario
+
+Pruebas de interfaz Web, Desktop, Mobile (al menos 3 completas) incluir el video generado de forma automatizada por el framework
+
+
 
 ## Semgrep Reporte
 
