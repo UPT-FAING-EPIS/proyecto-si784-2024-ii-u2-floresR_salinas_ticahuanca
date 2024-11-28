@@ -19,13 +19,13 @@ jobs:
         dotnet-version: 8.0.x
         
     - name: Restore dependencies
-      run: dotnet restore proyecto_pdf/proyectopdf.sln
+      run: dotnet restore PROYECTO_PDF/PROYECTOPDF.sln
       
     - name: Build
-      run: dotnet build proyecto_pdf/proyectopdf.sln --no-restore
+      run: dotnet build PROYECTO_PDF/PROYECTOPDF.sln --no-restore
       
     - name: Test with coverage
-      run: dotnet test proyecto_pdf/proyectopdf.sln /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage/
+      run: dotnet test PROYECTO_PDF/PROYECTOPDF.sln /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage/
       
     - name: Generate coverage report
       uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
