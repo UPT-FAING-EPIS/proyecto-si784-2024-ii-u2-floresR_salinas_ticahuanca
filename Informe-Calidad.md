@@ -226,8 +226,6 @@ Anteriormente el código se encuentraba así:
 
 ![image](https://github.com/user-attachments/assets/2dbef74a-7ccb-407e-b3b0-c00c3d582211)
 
-
-
 Análisis de la Aplicación con Snyk
 
 ![image](https://github.com/user-attachments/assets/26e083d9-44aa-490e-90b5-5772db7fdf27)
@@ -244,11 +242,23 @@ Análisis de la Aplicación con Snyk
 
 ![image](https://github.com/user-attachments/assets/8b21e404-77e3-442a-8614-832d8c3a9f26)
 
+## Snyk Reporte 
+
+![image](https://github.com/user-attachments/assets/fed15ad1-4037-446e-9178-ff17f068de50)
+
+Se muestran 0 vulnerabilidades 
+
 Análisis de la Aplicación con Semgrep
 
 ![image](https://github.com/user-attachments/assets/26fc401e-1624-4f64-be05-93396639cfb7)
 
 ![image](https://github.com/user-attachments/assets/428b807c-c12c-4a7c-b6fd-39a8445ee6e9)
+
+## Semgrep Reporte
+
+![image](https://github.com/user-attachments/assets/62b5fb8e-f88d-4e00-ad2c-dc81ca43db4c)
+
+En el reporte mostrado por semgrep se muestra los siguiente datos afectados
 
     7.1.   Tecnología de información 
 
@@ -401,14 +411,4 @@ Si se ingresa un correo o contraseña incorrectos se nos mostrara un mensaje de 
 
 Iniciamos sesion , se nos mostrara la interfaz principal de bienvenida con su tupo de suscripcion cantidad de operaciones realizadas y podremos tener la suscribcion premiun 
 
-## Semgrep Reporte
 
-![image](https://github.com/user-attachments/assets/62b5fb8e-f88d-4e00-ad2c-dc81ca43db4c)
-
-En el reporte mostrado por semgrep se muestra los siguiente datos afectados
-
-## Snyk Reporte 
-
-![image](https://github.com/user-attachments/assets/fed15ad1-4037-446e-9178-ff17f068de50)
-
-Se muestran 0 vulnerabilidades 
