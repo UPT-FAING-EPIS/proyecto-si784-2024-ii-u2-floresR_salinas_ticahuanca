@@ -208,6 +208,26 @@ Análisis de la Aplicación con SonarQube
 
 ![image](https://github.com/user-attachments/assets/ecadbbcc-4e9b-47f3-9946-376a80bae047)
 
+Anteriormente el código se encuentraba así:
+
+![image](https://github.com/user-attachments/assets/2f98665c-9f84-4b2b-989d-3c858754587b)
+
+![image](https://github.com/user-attachments/assets/e04d426f-1afc-495f-9b33-84a0639ba177)
+
+![image](https://github.com/user-attachments/assets/ad5866a6-2d78-42fd-8e72-53c52b01e27c)
+
+![image](https://github.com/user-attachments/assets/b0f351cd-57d3-4f0f-88ac-fc7a63478488)
+
+![image](https://github.com/user-attachments/assets/e464b480-26cc-4285-a6d4-d7d599529555)
+
+![image](https://github.com/user-attachments/assets/21c8beb1-f1f2-441f-9fe0-2fb7669e433f)
+
+![image](https://github.com/user-attachments/assets/7ba79d37-f4b5-4c07-bac2-329dc26d62fa)
+
+![image](https://github.com/user-attachments/assets/2dbef74a-7ccb-407e-b3b0-c00c3d582211)
+
+
+
 Análisis de la Aplicación con Snyk
 
 ![image](https://github.com/user-attachments/assets/26e083d9-44aa-490e-90b5-5772db7fdf27)
@@ -273,6 +293,8 @@ Análisis de la Aplicación con Semgrep
 
 - Reporte de cobertura de pruebas
 
+   Actualmente
+  
    Pruebas Unitarias (cobertura de al menos 80% de codigo -  los metodos mas importantes)
 
    ![image](https://github.com/user-attachments/assets/e1df9c33-0755-4992-8c1b-a7fc9e769bfe)
