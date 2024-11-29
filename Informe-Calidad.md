@@ -283,11 +283,11 @@ Análisis de la Aplicación con Semgrep
 
 9.1 Diagrama de Arquitectura de la aplicación
 
-![image](https://github.com/user-attachments/assets/2036117d-d7a1-4a6e-9b14-efe9e6ccbb13)
+![image](https://github.com/user-attachments/assets/2036117d-d7a1-4a6e-9b14-efe9e6ccbb13) - Anteriormente
 
 9.2. Diagrama de Clases de la aplicación
 
-![image](https://github.com/user-attachments/assets/0c082be2-d5dd-481b-a264-7b4d573f4a5b)
+![image](https://github.com/user-attachments/assets/0c082be2-d5dd-481b-a264-7b4d573f4a5b) - Anteriormente 
 
 9.3. Metodos de pruebas implementados para coberturar la aplicación
 
@@ -298,6 +298,8 @@ Análisis de la Aplicación con Semgrep
    Pruebas Unitarias (cobertura de al menos 80% de codigo -  los metodos mas importantes)
 
    ![image](https://github.com/user-attachments/assets/e1df9c33-0755-4992-8c1b-a7fc9e769bfe)
+
+   Se puede ver la cobertura de un 89% de codigo    
 
    ![image](https://github.com/user-attachments/assets/5adfcd3b-c054-4b8c-b7c2-158a3831c8e6)
 
@@ -385,11 +387,19 @@ Pruebas de interfaz Web, Desktop, Mobile (al menos 3 completas) incluir el video
 
 [video_1.webm](https://github.com/user-attachments/assets/40ad6cfb-b6f2-427b-8a7c-fc5d852765ae)
 
+Se ingresa el correo y contraseña , iniciamos sesion y se muestra la interfaz de bienvenida 
+
 [video_2.webm](https://github.com/user-attachments/assets/4acbbbc6-ebb9-4a6a-92dd-6850fdd04439)
+
+Se aprecia como se ingresan los datos de nombre de usuario , correo y contraseña , le damos a registrarse y se nos muestra un mensaje de confirmación y se nos mostrara un boton para regresar al login 
 
 [video_3.webm](https://github.com/user-attachments/assets/33e2e998-1436-4717-a177-c1f68fc484d1)
 
+Si se ingresa un correo o contraseña incorrectos se nos mostrara un mensaje de error 
+
 [video_4.webm](https://github.com/user-attachments/assets/f494f317-d15e-4ec9-8e7c-7970aef15b8b)
+
+Iniciamos sesion , se nos mostrara la interfaz principal de bienvenida con su tupo de suscripcion cantidad de operaciones realizadas y podremos tener la suscribcion premiun 
 
 ## Semgrep Reporte
 
