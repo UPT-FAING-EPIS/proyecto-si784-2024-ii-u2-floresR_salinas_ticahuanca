@@ -182,7 +182,7 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     ### **Diagrama de Componentes:**
 
-    ![image](https://github.com/user-attachments/assets/ee9f7230-e433-4985-919a-d7e404923c1b)
+    ![image](https://github.com/user-attachments/assets/05caa0a5-7f06-4ab4-8b8f-f63e097d25a5)
 
     ### **Diagrama de Arquitectura:**
 
