@@ -410,3 +410,5 @@ En el reporte mostrado por semgrep se muestra los siguiente datos afectados
 ## Snyk Reporte 
 
 ![image](https://github.com/user-attachments/assets/fed15ad1-4037-446e-9178-ff17f068de50)
+
+Se muestran 0 vulnerabilidades 
