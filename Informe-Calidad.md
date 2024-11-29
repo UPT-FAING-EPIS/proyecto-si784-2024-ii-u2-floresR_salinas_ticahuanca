@@ -299,7 +299,7 @@ Análisis de la Aplicación con Semgrep
 
    ![image](https://github.com/user-attachments/assets/e1df9c33-0755-4992-8c1b-a7fc9e769bfe)
 
-   Se puede ver la cobertura de un 89% de codigo    
+   Se observa un reporte generado con una cobertura de un 89% de codigo mas abajo con los siguientes metodos mas importantes 
 
    ![image](https://github.com/user-attachments/assets/5adfcd3b-c054-4b8c-b7c2-158a3831c8e6)
 
@@ -331,7 +331,7 @@ Análisis de la Aplicación con Semgrep
 
    ![image](https://github.com/user-attachments/assets/24797d8f-271e-4ba6-8622-5e0fceb3e15b)
 
-   informe de integracion con InmemoryDatabase en vez de moq
+   En este informe de integracion se realizo con InmemoryDatabase en vez de moq
 
 - Reporte de Pruebas guiadas por el comportamiento (BDD Given When Then)
 
@@ -404,6 +404,8 @@ Iniciamos sesion , se nos mostrara la interfaz principal de bienvenida con su tu
 ## Semgrep Reporte
 
 ![image](https://github.com/user-attachments/assets/62b5fb8e-f88d-4e00-ad2c-dc81ca43db4c)
+
+En el reporte mostrado por semgrep se muestra los siguiente datos afectados
 
 ## Snyk Reporte 
 
