@@ -152,7 +152,7 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     ### **Diagrama de Caso de Uso:** 
 
-    ![image](https://github.com/user-attachments/assets/2e7df55b-26de-434c-9193-98393e8dace3)
+    ![image](https://github.com/user-attachments/assets/4b631e3a-1907-434c-8cd6-24bfd69b1edf)
 
     ### **Diagrama de Clases:** 
 
@@ -200,15 +200,13 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     ![image](https://github.com/user-attachments/assets/c7dcb564-4017-47bd-9f46-cdc1614c934c)
 
-8. Desarrollo de la propuesta (Aqui va el analisis de su aplicación con SonarQube y Snyk, para que les muestre todos los aspectos a mejorar de su aplicación)
+7. Desarrollo de la propuesta (Aqui va el analisis de su aplicación con SonarQube y Snyk, para que les muestre todos los aspectos a mejorar de su aplicación)
 
-Análisis de la Aplicación con SonarQube
+Análisis de la Aplicación con SonarQube: (Anteriormente el código se encuentraba así)
 
 ![image](https://github.com/user-attachments/assets/374fe9a6-64de-4329-b98d-4b31907a8c94)
 
-![image](https://github.com/user-attachments/assets/ecadbbcc-4e9b-47f3-9946-376a80bae047)
-
-Anteriormente el código se encuentraba así:
+![image](https://github.com/user-attachments/assets/ecadbbcc-4e9b-47f3-9946-376a80bae047)  
 
 ![image](https://github.com/user-attachments/assets/2f98665c-9f84-4b2b-989d-3c858754587b)
 
@@ -225,6 +223,8 @@ Anteriormente el código se encuentraba así:
 ![image](https://github.com/user-attachments/assets/7ba79d37-f4b5-4c07-bac2-329dc26d62fa)
 
 ![image](https://github.com/user-attachments/assets/2dbef74a-7ccb-407e-b3b0-c00c3d582211)
+
+Como se puede ver las imágenes muestran un análisis de código que identifica problemas de mantenibilidad y consistencia en el proyecto.
 
 Análisis de la Aplicación con Snyk
 
