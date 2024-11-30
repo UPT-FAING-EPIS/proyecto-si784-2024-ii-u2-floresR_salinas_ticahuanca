@@ -1,0 +1,56 @@
+name: Pruebas BDD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
+        
+    - name: Restore dependencies
+      run: |
+        cd PROYECTO_PDF
+        dotnet restore
+      
+    - name: Build
+      run: |
+        cd PROYECTO_PDF
+        dotnet build --no-restore
+      
+    - name: Test
+      run: |
+        cd PROYECTO_PDF
+        dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage" --filter "FullyQualifiedName!~SubscriptionTests"
+      
+    - name: Install ReportGenerator
+      run: dotnet tool install -g dotnet-reportgenerator-globaltool
+      
+    - name: Generate Coverage Report
+      run: |
+        cd PROYECTO_PDF
+        reportgenerator "-reports:./NegocioPDF.Tests/TestResults/*/coverage.cobertura.xml" "-targetdir:../coveragereport" -reporttypes:Html
+      
+    - name: Install SpecFlow Plus LivingDoc
+      run: dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
+      
+    - name: Generate BDD Report
+      run: |
+        cd PROYECTO_PDF
+        livingdoc test-assembly ./NegocioPDF.Tests/bin/Debug/net8.0/NegocioPDF.Tests.dll -t ./NegocioPDF.Tests/bin/Debug/net8.0/TestExecution.json -o ../PDFTests.html
+      
+    - name: Deploy Reports to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .
+        publish_branch: gh-pages
