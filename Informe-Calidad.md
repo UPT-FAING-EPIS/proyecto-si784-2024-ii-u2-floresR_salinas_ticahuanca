@@ -311,7 +311,9 @@ Para el desarrollo de la aplicación, se adoptaron diversas metodologías y téc
 
    ![image](https://github.com/user-attachments/assets/e1df9c33-0755-4992-8c1b-a7fc9e769bfe)
 
-   Se observa un reporte generado con una cobertura de un 89% de codigo mas abajo con los siguientes metodos mas importantes 
+La imagen nos muestra un reporte de pruebas unitarias donde se ha logrado una cobertura del 89.1% en el código, superando el umbral recomendado del 80%. Esto 
+refleja un buen nivel de pruebas aplicadas a los métodos más importantes del sistema, lo que garantiza la validación de su funcionalidad. El análisis también 
+destaca que no se encontraron problemas de seguridad ni duplicaciones de código, lo que contribuye a la mantenibilidad y confiabilidad del proyecto.
 
    ![image](https://github.com/user-attachments/assets/5adfcd3b-c054-4b8c-b7c2-158a3831c8e6)
 
@@ -343,7 +345,9 @@ Para el desarrollo de la aplicación, se adoptaron diversas metodologías y téc
 
    ![image](https://github.com/user-attachments/assets/24797d8f-271e-4ba6-8622-5e0fceb3e15b)
 
-   En este informe de integracion se realizo con InmemoryDatabase en vez de moq
+   El reporte destaca una cobertura del 89% en líneas de código y del 88% en ramas, lo que indica un alto nivel de pruebas realizadas sobre el código base. 
+   Esto incluye detalles de los módulos cubiertos, con porcentajes individuales para líneas y ramas, mostrando áreas bien probadas y algunas con margen de 
+   mejora.
 
 - Reporte de Pruebas guiadas por el comportamiento (BDD Given When Then)
 
@@ -354,6 +358,11 @@ Para el desarrollo de la aplicación, se adoptaron diversas metodologías y téc
    ![image](https://github.com/user-attachments/assets/2177240a-d004-41c2-9374-901d2631e057)
 
    ![image](https://github.com/user-attachments/assets/d29d5d8e-f105-4b10-93a6-9c02f12d8d83)
+
+  El reporte muestra pruebas guiadas por el comportamiento (BDD) utilizando el formato Given-When-Then, específicamente para el caso de uso de inicio de 
+  sesión. Cada prueba representa un escenario distinto basado en una historia de usuario: un inicio de sesión exitoso, un intento fallido por credenciales 
+  inválidas y otro fallido por un correo vacío. Esto asegura que las funcionalidades clave se validen según las expectativas del usuario y los criterios de 
+  aceptación.
 
 - Reporte de Pruebas mutantes
 
@@ -367,6 +376,7 @@ Para el desarrollo de la aplicación, se adoptaron diversas metodologías y téc
 
    ![image](https://github.com/user-attachments/assets/8793aaf1-384d-4a74-9d7e-195cbec528a7)
 
+  
    
    Reporte de Stryker.NET - Análisis de Pruebas Mutantes
 
