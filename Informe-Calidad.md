@@ -321,6 +321,10 @@ destaca que no se encontraron problemas de seguridad ni duplicaciones de código
 
    ![image](https://github.com/user-attachments/assets/1625a7e3-1552-44c5-b271-0d6e0179c59a)
 
+Se detectó un problema en la organización del código, donde una interfaz no estaba ubicada en el namespace adecuado, lo que afectaba la mantenibilidad del 
+proyecto. Para solucionarlo, se movió la interfaz a un namespace más apropiado, mejorando la estructura y modularidad del código. Esta corrección hace que el 
+código sea más organizado y esté alineado con las buenas prácticas de desarrollo.
+
    ![image](https://github.com/user-attachments/assets/b9d7db88-6e9e-48a9-872d-e6e77308660d)
 
    ![image](https://github.com/user-attachments/assets/01b87c2f-518e-4dda-9480-69b56d7a20b0)
