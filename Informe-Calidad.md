@@ -249,7 +249,7 @@ Esto podría permitir que un atacante cambie esa ruta y acceda a archivos que no
 
 ![image](https://github.com/user-attachments/assets/fed15ad1-4037-446e-9178-ff17f068de50)
 
-Se muestran 0 vulnerabilidades 
+El reporte de Snyk muestra que no se detectaron vulnerabilidades conocidas en las dependencias escaneadas dentro del proyecto analizado. Esto indica que las bibliotecas utilizadas actualmente no presentan riesgos de seguridad según la base de datos de vulnerabilidades de Snyk, lo que es una señal positiva en términos de seguridad para las dependencias externas del proyecto.
 
 Análisis de la Aplicación con Semgrep
 
@@ -261,7 +261,7 @@ Análisis de la Aplicación con Semgrep
 
 ![image](https://github.com/user-attachments/assets/62b5fb8e-f88d-4e00-ad2c-dc81ca43db4c)
 
-En el reporte mostrado por semgrep se muestra los siguiente datos afectados
+El reporte de Semgrep identifica varias advertencias relacionadas con problemas de seguridad, en su mayoría vinculadas a la falta de validación de tokens anti-CSRF en métodos clave del controlador OperacionesPDFController. También se detectan problemas de configuración y advertencias sobre validaciones insuficientes, clasificadas con niveles de gravedad baja a media. Es fundamental abordar estos hallazgos agregando mecanismos de seguridad como la validación de tokens y revisando las configuraciones de seguridad del proyecto
 
     7.1.   Tecnología de información 
 
@@ -296,13 +296,11 @@ En el reporte mostrado por semgrep se muestra los siguiente datos afectados
 
 9.1 Diagrama de Arquitectura de la aplicación
 
-![image](https://github.com/user-attachments/assets/2036117d-d7a1-4a6e-9b14-efe9e6ccbb13) - Anteriormente
-
-![image](https://github.com/user-attachments/assets/56266e7a-eeb3-4f1e-9585-aeea12d7ce09)
+![image](https://github.com/user-attachments/assets/7c9f6c25-f6a4-4263-ba87-d4070bc088f0)
 
 9.2. Diagrama de Clases de la aplicación
 
-![image](https://github.com/user-attachments/assets/0c082be2-d5dd-481b-a264-7b4d573f4a5b) - Anteriormente 
+![image](https://github.com/user-attachments/assets/692e6a9f-9425-4105-8047-b55b002517cf)
 
 9.3. Metodos de pruebas implementados para coberturar la aplicación
 
