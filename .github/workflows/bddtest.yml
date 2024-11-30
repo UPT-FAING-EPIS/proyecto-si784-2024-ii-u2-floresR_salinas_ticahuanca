@@ -38,7 +38,7 @@ jobs:
     - name: Generate Coverage Report
       run: |
         cd PROYECTO_PDF
-        reportgenerator "-reports:./NegocioPDF.Tests/TestResults/*/coverage.cobertura.xml" "-targetdir:../coveragereport" -reporttypes:Html
+        reportgenerator "-reports:./NegocioPDF.Tests/TestResults/*/coverage.cobertura.xml" "-targetdir:./reports/coverage" -reporttypes:Html
       
     - name: Install SpecFlow Plus LivingDoc
       run: dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
@@ -46,11 +46,28 @@ jobs:
     - name: Generate BDD Report
       run: |
         cd PROYECTO_PDF
-        livingdoc test-assembly ./NegocioPDF.Tests/bin/Debug/net8.0/NegocioPDF.Tests.dll -t ./NegocioPDF.Tests/bin/Debug/net8.0/TestExecution.json -o ../PDFTests.html
+        livingdoc test-assembly ./NegocioPDF.Tests/bin/Debug/net8.0/NegocioPDF.Tests.dll -t ./NegocioPDF.Tests/bin/Debug/net8.0/TestExecution.json -o ./reports/bdd/PDFTests.html
+      
+    # Crear directorio para reportes
+    - name: Create Reports Directory
+      run: mkdir -p reports
+
+    # Mover reportes a un directorio limpio
+    - name: Prepare Reports
+      run: |
+        mkdir -p reports_to_publish
+        cp -r PROYECTO_PDF/reports/* reports_to_publish/
       
     - name: Deploy Reports to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: .
+        publish_dir: ./reports_to_publish
         publish_branch: gh-pages
+
+    # Crear un artefacto descargable con los reportes
+    - name: Upload Reports as Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-reports
+        path: reports_to_publish/
