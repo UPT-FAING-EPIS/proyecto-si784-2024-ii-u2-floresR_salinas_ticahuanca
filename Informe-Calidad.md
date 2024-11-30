@@ -190,7 +190,7 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     ### **Diagrama de Despliegue:**
 
-    ![image](https://github.com/user-attachments/assets/6be85a75-eb13-477f-be3c-500c25c33920)
+    ![image](https://github.com/user-attachments/assets/2089aae2-b181-42bd-843b-4b76c07fd43d)
 
     ### **Diagrama Base de datos relacional:**
 
