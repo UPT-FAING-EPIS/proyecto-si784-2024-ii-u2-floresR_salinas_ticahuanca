@@ -152,11 +152,11 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     ### **Diagrama de Caso de Uso:** 
 
-    ![image](https://github.com/user-attachments/assets/45248127-4814-4563-b955-fb643fd90b9d)
+    ![image](https://github.com/user-attachments/assets/2e7df55b-26de-434c-9193-98393e8dace3)
 
     ### **Diagrama de Clases:** 
 
-    ![image](https://github.com/user-attachments/assets/8a1b85f7-6883-49e0-ad3e-8a4462c5e263)
+    ![image](https://github.com/user-attachments/assets/692e6a9f-9425-4105-8047-b55b002517cf)
 
     ### **Diagrama de Secuencia:** 
 
@@ -186,7 +186,7 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     ### **Diagrama de Arquitectura:**
 
-    ![image](https://github.com/user-attachments/assets/7b7ed41d-394d-400b-bbdd-48b278e1eb89)
+    ![image](https://github.com/user-attachments/assets/7c9f6c25-f6a4-4263-ba87-d4070bc088f0)
 
     ### **Diagrama de Despliegue:**
 
@@ -200,7 +200,7 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     ![image](https://github.com/user-attachments/assets/c7dcb564-4017-47bd-9f46-cdc1614c934c)
 
-7. Desarrollo de la propuesta (Aqui va el analisis de su aplicación con SonarQube y Snyk, para que les muestre todos los aspectos a mejorar de su aplicación)
+8. Desarrollo de la propuesta (Aqui va el analisis de su aplicación con SonarQube y Snyk, para que les muestre todos los aspectos a mejorar de su aplicación)
 
 Análisis de la Aplicación con SonarQube
 
@@ -294,6 +294,8 @@ En el reporte mostrado por semgrep se muestra los siguiente datos afectados
 9.1 Diagrama de Arquitectura de la aplicación
 
 ![image](https://github.com/user-attachments/assets/2036117d-d7a1-4a6e-9b14-efe9e6ccbb13) - Anteriormente
+
+![image](https://github.com/user-attachments/assets/56266e7a-eeb3-4f1e-9585-aeea12d7ce09)
 
 9.2. Diagrama de Clases de la aplicación
 
