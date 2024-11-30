@@ -263,25 +263,25 @@ Análisis de la Aplicación con Semgrep
 
 El reporte de Semgrep identifica varias advertencias relacionadas con problemas de seguridad, en su mayoría vinculadas a la falta de validación de tokens anti-CSRF en métodos clave del controlador OperacionesPDFController. También se detectan problemas de configuración y advertencias sobre validaciones insuficientes, clasificadas con niveles de gravedad baja a media. Es fundamental abordar estos hallazgos agregando mecanismos de seguridad como la validación de tokens y revisando las configuraciones de seguridad del proyecto
 
-    7.1.   Tecnología de información 
+7.1.   Tecnología de información 
 
-    **SonarQube**: Es una herramienta de análisis estático de código que permite revisar automáticamente la calidad del código fuente de la aplicación. SonarQube analiza la base de código y genera reportes sobre posibles errores, vulnerabilidades, deuda técnica, código duplicado y áreas donde se pueden aplicar mejoras. Además, realiza un seguimiento continuo de la calidad del código, integrándose con herramientas de CI/CD como GitHub Actions.
+  **SonarQube**: Es una herramienta de análisis estático de código que permite revisar automáticamente la calidad del código fuente de la aplicación. SonarQube analiza la base de código y genera reportes sobre posibles errores, vulnerabilidades, deuda técnica, código duplicado y áreas donde se pueden aplicar mejoras. Además, realiza un seguimiento continuo de la calidad del código, integrándose con herramientas de CI/CD como GitHub Actions.
    
-    **Snyk**: Snyk es una plataforma de seguridad que se enfoca en la gestión de vulnerabilidades en las dependencias y bibliotecas de código abierto. Durante el análisis, se identifican posibles vulnerabilidades en las dependencias de terceros, lo que permite corregir problemas de seguridad antes de que afecten la producción.
+   **Snyk**: Snyk es una plataforma de seguridad que se enfoca en la gestión de vulnerabilidades en las dependencias y bibliotecas de código abierto. Durante el análisis, se identifican posibles vulnerabilidades en las dependencias de terceros, lo que permite corregir problemas de seguridad antes de que afecten la producción.
 
-    **ASP.NET Core y C#**: El proyecto está desarrollado en ASP.NET Core utilizando el lenguaje de programación C#. Esto permite implementar una aplicación web robusta y escalable, con soporte para múltiples plataformas.
+  **ASP.NET Core y C#**: El proyecto está desarrollado en ASP.NET Core utilizando el lenguaje de programación C#. Esto permite implementar una aplicación web robusta y escalable, con soporte para múltiples plataformas.
 
-    **GitHub y GitHub Actions**: Se utilizó GitHub como sistema de control de versiones y plataforma de colaboración. GitHub Actions se empleó para la integración continua, ejecutando automáticamente los análisis de calidad del código con SonarQube y los análisis de seguridad con Snyk en cada push al repositorio.
+  **GitHub y GitHub Actions**: Se utilizó GitHub como sistema de control de versiones y plataforma de colaboración. GitHub Actions se empleó para la integración continua, ejecutando automáticamente los análisis de calidad del código con SonarQube y los análisis de seguridad con Snyk en cada push al repositorio.
 
-    **MariaDB/MySQL**: Para la base de datos se utilizó MariaDB, que es una bifurcación de MySQL. Esta tecnología permitió gestionar el almacenamiento de datos de manera eficiente, con soporte para transacciones y consultas complejas.
+  **MariaDB/MySQL**: Para la base de datos se utilizó MariaDB, que es una bifurcación de MySQL. Esta tecnología permitió gestionar el almacenamiento de datos de manera eficiente, con soporte para transacciones y consultas complejas.
 
     7.2.   Metodología, técnicas usadas
 
     Para el desarrollo de la aplicación, se adoptaron diversas metodologías y técnicas que permitieron optimizar el flujo de trabajo y asegurar la calidad del producto final. Entre las principales metodologías y técnicas utilizadas se destacan:
 
-    - **Desarrollo Ágil con GitHub Projects**: Se utilizó GitHub Projects para la planificación y gestión del trabajo en un entorno ágil. Las tareas se organizaron en tableros Kanban, permitiendo una visibilidad clara del progreso, asignación de tareas y establecimiento de prioridades. Cada tarea se vinculó con issues y pull requests dentro del repositorio, facilitando la colaboración y el seguimiento del avance de las funcionalidades.
+   - **Desarrollo Ágil con GitHub Projects**: Se utilizó GitHub Projects para la planificación y gestión del trabajo en un entorno ágil. Las tareas se organizaron en tableros Kanban, permitiendo una visibilidad clara del progreso, asignación de tareas y establecimiento de prioridades. Cada tarea se vinculó con issues y pull requests dentro del repositorio, facilitando la colaboración y el seguimiento del avance de las funcionalidades.
 
-    - **Integración Continua (CI)**: Se implementó un flujo de integración continua a través de GitHub Actions. Cada vez que se realizaba un cambio en el código (mediante un push o pull request), se ejecutaban pruebas automáticas, análisis de calidad con SonarQube y análisis de seguridad con Snyk, asegurando que el código estuviera siempre en condiciones óptimas para ser fusionado con la rama principal.
+  - **Integración Continua (CI)**: Se implementó un flujo de integración continua a través de GitHub Actions. Cada vez que se realizaba un cambio en el código (mediante un push o pull request), se ejecutaban pruebas automáticas, análisis de calidad con SonarQube y análisis de seguridad con Snyk, asegurando que el código estuviera siempre en condiciones óptimas para ser fusionado con la rama principal.
 
     - **Análisis Estático de Código**:
     
