@@ -228,6 +228,9 @@ Como se puede ver las imágenes muestran un análisis de código que identifica 
 
 Análisis de la Aplicación con Snyk
 
+El problema mostrado en el código es que se está usando directamente una ruta de archivo que viene de una entrada del usuario, sin verificar si es segura. 
+Esto podría permitir que un atacante cambie esa ruta y acceda a archivos que no debería.
+
 ![image](https://github.com/user-attachments/assets/26e083d9-44aa-490e-90b5-5772db7fdf27)
 
 ![image](https://github.com/user-attachments/assets/335b21dc-b8e6-495f-a83a-71be41c4714e)
