@@ -160,7 +160,7 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     ### **Diagrama de Clases:** 
 
-    ![image](https://github.com/user-attachments/assets/692e6a9f-9425-4105-8047-b55b002517cf)
+    ![image](https://github.com/user-attachments/assets/bdc75895-1576-4a76-8c0f-a0e758118685)
 
     ### **Diagrama de Secuencia:** 
 
