@@ -265,7 +265,7 @@ Análisis de la Aplicación con Semgrep
 
 ![image](https://github.com/user-attachments/assets/62b5fb8e-f88d-4e00-ad2c-dc81ca43db4c)
 
-El reporte de Semgrep identifica varias advertencias relacionadas con problemas de seguridad, en su mayoría vinculadas a la falta de validación de tokens anti-CSRF en métodos clave del controlador OperacionesPDFController. También se detectan problemas de configuración y advertencias sobre validaciones insuficientes, clasificadas con niveles de gravedad baja a media. Es fundamental abordar estos hallazgos agregando mecanismos de seguridad como la validación de tokens y revisando las configuraciones de seguridad del proyecto
+El reporte de Semgrep identifica varias advertencias relacionadas con problemas de seguridad, en su mayoría vinculadas a la falta de validación de tokens anti-CSRF en métodos clave del controlador OperacionesPDFController. También se detectan problemas de configuración y advertencias sobre validaciones insuficientes, clasificadas con niveles de gravedad baja a media. 
 
 7.1.   Tecnología de información 
 
