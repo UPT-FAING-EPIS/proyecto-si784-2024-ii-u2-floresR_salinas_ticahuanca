@@ -275,7 +275,7 @@ El reporte de Semgrep identifica varias advertencias relacionadas con problemas 
 
   **MariaDB/MySQL**: Para la base de datos se utilizó MariaDB, que es una bifurcación de MySQL. Esta tecnología permitió gestionar el almacenamiento de datos de manera eficiente, con soporte para transacciones y consultas complejas.
 
-    7.2.   Metodología, técnicas usadas
+7.2.   Metodología, técnicas usadas
 
     Para el desarrollo de la aplicación, se adoptaron diversas metodologías y técnicas que permitieron optimizar el flujo de trabajo y asegurar la calidad del producto final. Entre las principales metodologías y técnicas utilizadas se destacan:
 
