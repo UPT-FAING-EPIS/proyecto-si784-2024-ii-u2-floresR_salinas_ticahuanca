@@ -1,0 +1,73 @@
+name: Release Automático
+
+on:
+  push:
+    tags:
+      - 'v*' # Se activará cuando se cree un tag que empiece con 'v'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Necesario para crear releases
+    steps:
+      - uses: actions/checkout@v3
+        
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
+          
+      - name: Restore dependencies
+        run: |
+          cd PROYECTO_PDF
+          dotnet restore
+          
+      - name: Build
+        run: |
+          cd PROYECTO_PDF
+          dotnet build --configuration Release --no-restore
+          
+      - name: Test
+        run: |
+          cd PROYECTO_PDF
+          dotnet test --no-build --verbosity normal --filter "FullyQualifiedName!~SubscriptionTests"
+          
+      - name: Publish
+        run: |
+          cd PROYECTO_PDF
+          dotnet publish -c Release -o published
+          
+      # Crear el archivo ZIP del release
+      - name: Create Release ZIP
+        run: |
+          cd PROYECTO_PDF/published
+          zip -r ../../NegocioPDF-${{ github.ref_name }}.zip .
+          
+      # Crear el Release en GitHub
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: NegocioPDF-${{ github.ref_name }}.zip
+          name: Release ${{ github.ref_name }}
+          body: |
+            # Release ${{ github.ref_name }}
+            
+            ## Cambios en esta versión
+            
+            ### Nuevas características
+            - [Lista de nuevas características]
+            
+            ### Correcciones
+            - [Lista de correcciones]
+            
+            ### Notas de instalación
+            1. Descarga el archivo ZIP
+            2. Extrae el contenido
+            3. Ejecuta la aplicación
+            
+            ### Requisitos del sistema
+            - .NET 8.0 o superior
+            - Windows/Linux/MacOS
+          draft: false
+          prerelease: false
