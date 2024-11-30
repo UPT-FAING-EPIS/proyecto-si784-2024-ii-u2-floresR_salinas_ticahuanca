@@ -303,7 +303,7 @@ Para el desarrollo de la aplicación, se adoptaron diversas metodologías y téc
 
 9.2. Diagrama de Clases de la aplicación
 
-![image](https://github.com/user-attachments/assets/692e6a9f-9425-4105-8047-b55b002517cf)
+![image](https://github.com/user-attachments/assets/6e32b3d8-79d6-474d-a871-6adc216cc8a9)
 
 9.3. Metodos de pruebas implementados para coberturar la aplicación
 
