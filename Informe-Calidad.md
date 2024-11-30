@@ -156,7 +156,7 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     ### **Diagrama de Clases:** 
 
-    ![image](https://github.com/user-attachments/assets/692e6a9f-9425-4105-8047-b55b002517cf)
+    ![image](https://github.com/user-attachments/assets/bdc75895-1576-4a76-8c0f-a0e758118685)
 
     ### **Diagrama de Secuencia:** 
 
@@ -261,7 +261,7 @@ Análisis de la Aplicación con Semgrep
 
 ![image](https://github.com/user-attachments/assets/62b5fb8e-f88d-4e00-ad2c-dc81ca43db4c)
 
-El reporte de Semgrep identifica varias advertencias relacionadas con problemas de seguridad, en su mayoría vinculadas a la falta de validación de tokens anti-CSRF en métodos clave del controlador OperacionesPDFController. También se detectan problemas de configuración y advertencias sobre validaciones insuficientes, clasificadas con niveles de gravedad baja a media. Es fundamental abordar estos hallazgos agregando mecanismos de seguridad como la validación de tokens y revisando las configuraciones de seguridad del proyecto
+El reporte de Semgrep identifica varias advertencias relacionadas con problemas de seguridad, en su mayoría vinculadas a la falta de validación de tokens anti-CSRF en métodos clave del controlador OperacionesPDFController. También se detectan problemas de configuración y advertencias sobre validaciones insuficientes, clasificadas con niveles de gravedad baja a media. 
 
 7.1.   Tecnología de información 
 
@@ -299,7 +299,7 @@ Para el desarrollo de la aplicación, se adoptaron diversas metodologías y téc
 
 9.2. Diagrama de Clases de la aplicación
 
-![image](https://github.com/user-attachments/assets/692e6a9f-9425-4105-8047-b55b002517cf)
+![image](https://github.com/user-attachments/assets/6e32b3d8-79d6-474d-a871-6adc216cc8a9)
 
 9.3. Metodos de pruebas implementados para coberturar la aplicación
 
@@ -377,7 +377,7 @@ El análisis estático señala un problema de consistencia debido a la ausencia 
   sesión. Cada prueba representa un escenario distinto basado en una historia de usuario: un inicio de sesión exitoso, un intento fallido por credenciales 
   inválidas y otro fallido por un correo vacío. Esto asegura que las funcionalidades clave se validen según las expectativas del usuario y los criterios de 
   aceptación.
-
+  
 - Reporte de Pruebas mutantes
 
    Pruebas mutantes para ver todas las posibles pruebas.
@@ -435,5 +435,3 @@ Si se ingresa un correo o contraseña incorrectos se nos mostrara un mensaje de 
 [video_4.webm](https://github.com/user-attachments/assets/f494f317-d15e-4ec9-8e7c-7970aef15b8b)
 
 Iniciamos sesion , se nos mostrara la interfaz principal de bienvenida con su tupo de suscripcion cantidad de operaciones realizadas y podremos tener la suscribcion premiun 
-
-
