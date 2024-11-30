@@ -329,21 +329,31 @@ código sea más organizado y esté alineado con las buenas prácticas de desarr
 
    ![image](https://github.com/user-attachments/assets/01b87c2f-518e-4dda-9480-69b56d7a20b0)
 
+Se identificó un problema de consistencia en la organización de las pruebas, ya que la clase DetalleSuscripcionRepositoryTests no estaba correctamente declarada en un namespace adecuado, lo que afectaba la claridad y mantenibilidad del código. Para solucionar esto, se corrigió el problema ubicando la clase en el namespace correspondiente, NegocioPDF.Tests, y se configuraron los datos de prueba y las dependencias con un contexto en memoria. Esta mejora asegura que las pruebas sean más modulares y sigan las mejores prácticas para mantener una estructura clara y bien organizada en el proyecto.
+
    ![image](https://github.com/user-attachments/assets/f7fa2ab4-698b-41a7-82f4-86b7a41d0ff3)
 
    ![image](https://github.com/user-attachments/assets/2c96f4f1-0830-47bc-aa13-ae169bf12b9c)
+
+El análisis estático detectó un problema de anulabilidad en el método ObtenerUsuarioPorId dentro del repositorio UsuarioRepository, ya que el tipo de retorno no manejaba adecuadamente los valores nulos. Para solucionarlo, se corrigió el método añadiendo una excepción InvalidOperationException en caso de que no se encuentre el usuario correspondiente. Esta mejora garantiza que el método maneje correctamente los casos sin coincidencias, lo que mejora la confiabilidad y claridad del código.
 
    ![image](https://github.com/user-attachments/assets/fef6f6ba-aaae-4afd-95e8-876624a79214)
 
    ![image](https://github.com/user-attachments/assets/711acbb0-9da8-4b7c-8de2-4e28b0dd2799)
 
+El análisis estático señala un problema de anulabilidad en el método ObtenerUsuarioPorId dentro del repositorio UsuarioRepository, indicando que el tipo de retorno no maneja adecuadamente los valores nulos. Para corregirlo, se modificó el método añadiendo una excepción InvalidOperationException si no se encuentra el usuario correspondiente. Esta solución asegura que el método maneje correctamente los casos sin coincidencias, mejorando la confiabilidad y claridad del código.
+
    ![image](https://github.com/user-attachments/assets/1cf8d2d9-1c9b-405c-82b0-5f80516672a6)
 
    ![image](https://github.com/user-attachments/assets/c0a3ae36-8ba5-4898-977e-5cd0492d4656)
 
+El análisis estático destaca un problema en el método ActualizarSuscripcion, donde se utiliza System.Exception, lo cual no es recomendable porque dificulta la identificación precisa de los errores. La corrección realizada consistió en reemplazar System.Exception con InvalidOperationException, una excepción más específica. Esto mejora la claridad y mantenibilidad del código, proporcionando un mensaje más claro cuando no se encuentra una suscripción para actualizar. Esta práctica sigue las mejores recomendaciones para el manejo de errores en aplicaciones robustas.
+
    ![image](https://github.com/user-attachments/assets/34bee983-d0f7-4d94-bf04-7e11c6381bf7)
 
    ![image](https://github.com/user-attachments/assets/c13373f5-984e-4ccf-94d7-b315f563b930)
+
+El análisis estático señala un problema de consistencia debido a la ausencia de un namespace definido, lo que afecta la mantenibilidad del código. La corrección realizada consistió en incluir el archivo dentro del namespace NegocioPDF.Tests, alineando la clase con las mejores prácticas de organización. Esto mejora la claridad del proyecto al agrupar correctamente las clases de prueba según su módulo correspondiente.
 
    Pruebas de integración utilizando Mocks o Fake Classes
 
