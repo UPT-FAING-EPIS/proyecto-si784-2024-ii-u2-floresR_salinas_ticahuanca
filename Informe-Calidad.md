@@ -376,8 +376,8 @@ destaca que no se encontraron problemas de seguridad ni duplicaciones de código
 
    ![image](https://github.com/user-attachments/assets/8793aaf1-384d-4a74-9d7e-195cbec528a7)
 
+   El análisis indica qué partes del código están bien cubiertas por pruebas y cuáles necesitan mayor atención, ayudando a fortalecer el conjunto de pruebas. 
   
-   
    Reporte de Stryker.NET - Análisis de Pruebas Mutantes
 
    Barra Superior Colorida
@@ -401,7 +401,6 @@ destaca que no se encontraron problemas de seguridad ni duplicaciones de código
 - Migrations: 0% (Normal, no se suelen probar)
 - Models: N/A
 - Repositories: 80.68% (Bastante bueno)
-
 
 Reporte de Pruebas de interfaz de usuario
 
