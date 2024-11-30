@@ -422,7 +422,7 @@ El análisis estático señala un problema de consistencia debido a la ausencia 
 
 Reporte de Pruebas de interfaz de usuario
 
-Pruebas de interfaz Web, Desktop, Mobile (al menos 3 completas) incluir el video generado de forma automatizada por el framework
+Pruebas (al menos 3 completas) incluir el video generado de forma automatizada por el framework
 
 [video_1.webm](https://github.com/user-attachments/assets/40ad6cfb-b6f2-427b-8a7c-fc5d852765ae)
 
